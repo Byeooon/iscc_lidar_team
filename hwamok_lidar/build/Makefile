@@ -584,19 +584,6 @@ lidar_object_detector_geneus/fast:
 .PHONY : lidar_object_detector_geneus/fast
 
 #=============================================================================
-# Target rules for targets named _lidar_object_detector_generate_messages_check_deps_Trafficcone
-
-# Build rule for target.
-_lidar_object_detector_generate_messages_check_deps_Trafficcone: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _lidar_object_detector_generate_messages_check_deps_Trafficcone
-.PHONY : _lidar_object_detector_generate_messages_check_deps_Trafficcone
-
-# fast build rule for target.
-_lidar_object_detector_generate_messages_check_deps_Trafficcone/fast:
-	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build
-.PHONY : _lidar_object_detector_generate_messages_check_deps_Trafficcone/fast
-
-#=============================================================================
 # Target rules for targets named _lidar_object_detector_generate_messages_check_deps_Waypoint
 
 # Build rule for target.
@@ -1310,6 +1297,19 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 sensor_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named _lidar_object_detector_generate_messages_check_deps_ObjectInfo
+
+# Build rule for target.
+_lidar_object_detector_generate_messages_check_deps_ObjectInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _lidar_object_detector_generate_messages_check_deps_ObjectInfo
+.PHONY : _lidar_object_detector_generate_messages_check_deps_ObjectInfo
+
+# fast build rule for target.
+_lidar_object_detector_generate_messages_check_deps_ObjectInfo/fast:
+	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/build
+.PHONY : _lidar_object_detector_generate_messages_check_deps_ObjectInfo/fast
 
 #=============================================================================
 # Target rules for targets named bond_generate_messages_lisp
@@ -3540,7 +3540,6 @@ help:
 	@echo "... lidar_object_detector_genpy"
 	@echo "... lidar_object_detector_generate_messages_lisp"
 	@echo "... lidar_object_detector_geneus"
-	@echo "... _lidar_object_detector_generate_messages_check_deps_Trafficcone"
 	@echo "... _lidar_object_detector_generate_messages_check_deps_Waypoint"
 	@echo "... lidar_object_detector_generate_messages"
 	@echo "... nav_msgs_generate_messages_lisp"
@@ -3596,6 +3595,7 @@ help:
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... _lidar_object_detector_generate_messages_check_deps_ObjectInfo"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"

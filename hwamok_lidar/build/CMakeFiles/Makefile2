@@ -173,7 +173,6 @@ lidar_object_detector/clean: lidar_object_detector/CMakeFiles/lidar_object_detec
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/lidar_object_detector_genpy.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/lidar_object_detector_geneus.dir/clean
-lidar_object_detector/clean: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
@@ -229,6 +228,7 @@ lidar_object_detector/clean: lidar_object_detector/CMakeFiles/visualization_msgs
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/nodelet_topic_tools_gencfg.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+lidar_object_detector/clean: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/bond_generate_messages_lisp.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 lidar_object_detector/clean: lidar_object_detector/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
@@ -1513,13 +1513,13 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_genpy.dir/clean:
 
 # All Build rule for target.
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: velodyne/velodyne_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DynamicVelocity.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Boundingbox.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Delivery.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DriveValues.dir/all
 	$(MAKE) -f lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/build.make lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir/depend
@@ -1570,33 +1570,6 @@ lidar_object_detector_geneus: lidar_object_detector/CMakeFiles/lidar_object_dete
 lidar_object_detector/CMakeFiles/lidar_object_detector_geneus.dir/clean:
 	$(MAKE) -f lidar_object_detector/CMakeFiles/lidar_object_detector_geneus.dir/build.make lidar_object_detector/CMakeFiles/lidar_object_detector_geneus.dir/clean
 .PHONY : lidar_object_detector/CMakeFiles/lidar_object_detector_geneus.dir/clean
-
-#=============================================================================
-# Target rules for target lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir
-
-# All Build rule for target.
-lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all:
-	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/depend
-	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num= "Built target _lidar_object_detector_generate_messages_check_deps_Trafficcone"
-.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
-
-# Build rule for subdir invocation for target.
-lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/foscar/hwamok_lidar/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/foscar/hwamok_lidar/build/CMakeFiles 0
-.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/rule
-
-# Convenience name for target.
-_lidar_object_detector_generate_messages_check_deps_Trafficcone: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/rule
-
-.PHONY : _lidar_object_detector_generate_messages_check_deps_Trafficcone
-
-# clean rule for target.
-lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/clean:
-	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/clean
-.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/clean
 
 #=============================================================================
 # Target rules for target lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir
@@ -1715,12 +1688,12 @@ lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean:
 
 # All Build rule for target.
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: velodyne/velodyne_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DynamicVelocity.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Boundingbox.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Delivery.dir/all
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_nodejs.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DriveValues.dir/all
@@ -3097,6 +3070,33 @@ lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
 .PHONY : lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
+# Target rules for target lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir
+
+# All Build rule for target.
+lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all:
+	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/depend
+	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num= "Built target _lidar_object_detector_generate_messages_check_deps_ObjectInfo"
+.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
+
+# Build rule for subdir invocation for target.
+lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/foscar/hwamok_lidar/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/foscar/hwamok_lidar/build/CMakeFiles 0
+.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/rule
+
+# Convenience name for target.
+_lidar_object_detector_generate_messages_check_deps_ObjectInfo: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/rule
+
+.PHONY : _lidar_object_detector_generate_messages_check_deps_ObjectInfo
+
+# clean rule for target.
+lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/clean:
+	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/clean
+.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/clean
+
+#=============================================================================
 # Target rules for target lidar_object_detector/CMakeFiles/bond_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -3317,7 +3317,6 @@ lidar_object_detector/CMakeFiles/topic_tools_generate_messages_eus.dir/clean:
 
 # All Build rule for target.
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: velodyne/velodyne_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DynamicVelocity.dir/all
@@ -3325,6 +3324,7 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Delivery.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DriveValues.dir/all
 	$(MAKE) -f lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/build.make lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/depend
 	$(MAKE) -f lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/build.make lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/build
@@ -3623,13 +3623,13 @@ lidar_object_detector/CMakeFiles/traffic_cone.dir/clean:
 
 # All Build rule for target.
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: velodyne/velodyne_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DynamicVelocity.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Boundingbox.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Delivery.dir/all
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DriveValues.dir/all
 	$(MAKE) -f lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/build.make lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/depend
@@ -3713,13 +3713,13 @@ lidar_object_detector/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
 
 # All Build rule for target.
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: velodyne/velodyne_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DynamicVelocity.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Boundingbox.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Delivery.dir/all
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/all: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DriveValues.dir/all
 	$(MAKE) -f lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/build.make lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/depend

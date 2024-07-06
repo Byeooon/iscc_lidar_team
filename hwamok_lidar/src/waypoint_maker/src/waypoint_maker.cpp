@@ -8,17 +8,6 @@ using namespace std;
 #define Y_CMP 2
 #define D_CMP 3
 
-namespace waypoint_maker {
-    struct waypointMakerConfig {
-        double xMinRubberCone;
-        double xMaxRubberCone;
-        double yMinRubberCone;
-        double yMaxRubberCone;
-        double zMinRubberCone;
-        double zMaxRubberCone;
-    };
-}
-
 typedef struct Object {
     double centerX;
     double centerY;
@@ -185,7 +174,7 @@ class WaypointMaker{
         rightPivot.centerZ = 0.0;
 
         // subscribe
-        mainSub = nh.subscribe("/traffic_cone", 1, &WaypointMaker::mainCallback, this);
+        mainSub = nh.subscribe("/waypoint_maker", 1, &WaypointMaker::mainCallback, this);
 
         visualizeConePub = nh.advertise<visualization_msgs::MarkerArray>("/cone_marker", 0.001);
         waypointInfoPub = nh.advertise<waypoint_maker::Waypoint>("/waypoint_info", 0.001);
@@ -402,6 +391,7 @@ void WaypointMaker::visualizeLeftRightCone() {
 
         coneObjectArray.markers.emplace_back(coneObject);
     }
+    cout << "!!!!!!!!!!!!!!!!1" << endl;
     visualizeConePub.publish(coneObjectArray);
 }
 
@@ -482,7 +472,7 @@ void WaypointMaker::visualizePivot() {
     visualizePivotPub.publish(pivotObjectArray);
 }
 
-void cfgCallback(waypoint_maker::waypoint_makerConfig &config, WaypointMaker* wm) {
+void cfgCallback(waypoint_maker::waypointMakerConfig &config, WaypointMaker* wm) {
     wm->xMinRubberCone = config.xMinRubberCone;
     wm->xMaxRubberCone = config.xMaxRubberCone;
     wm->yMinRubberCone = config.yMinRubberCone;
@@ -493,7 +483,7 @@ void cfgCallback(waypoint_maker::waypoint_makerConfig &config, WaypointMaker* wm
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "waypoint_maker");
-    
+
     WaypointMaker waypointMaker;
     
     dynamic_reconfigure::Server<waypoint_maker::waypointMakerConfig> server;

@@ -3,6 +3,7 @@ ad8dc8afa43d9361f3acfe69a902c32c /home/foscar/hwamok_lidar/devel/include/lidar_o
 233da40f766a8ec83d0f258a19e97508 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h
 63345948fcb740eab2d8c8617b6bd3ea /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h
 73ee18e31bb44d01c499bfb45c63d475 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DynamicVelocity.h
+8d6bd9e7f5d763242a2e97d2a767e8f1 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h
 f41cd9e504a981f53126c71b10405c94 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/TrafficCone.h
 cb485724e6753323850e4cf89c41677f /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Trafficcone.h
 132ee98be90004fea9a94b97cddb01b8 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Waypoint.h
@@ -19,6 +20,7 @@ cb85b5c4686952d7bceeb23d286ca686 /home/foscar/hwamok_lidar/devel/include/waypoin
 b21a43e827b96c84e8c6e00cac2fda8e /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Delivery.py
 436ce76eae3845449c667acf9042601e /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DriveValues.py
 fea7343ef13366b5baec7567080a5dfe /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DynamicVelocity.py
+62ffd15611158f8fe95c68a77195aa8a /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_ObjectInfo.py
 0dcb591892c17765003d60d34e797d15 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_TrafficCone.py
 9f6531a54b28adedce80544740b2b7d9 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Trafficcone.py
 bdb211242f923ed0392a2fdbfae76e03 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Waypoint.py
@@ -33,6 +35,7 @@ fed571bc291c15c83b9eb93c3eddf2fd /home/foscar/hwamok_lidar/devel/share/common-li
 7690eca38fe88d356bf0a5434cb67916 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Delivery.lisp
 c71e4f779244f2564531a263a1f8ee68 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DriveValues.lisp
 9111f4826732db7ca8db029d4ff2104c /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DynamicVelocity.lisp
+afbb851e9f6dfaec88095743a1ca0942 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/ObjectInfo.lisp
 df477759a519b5b734158daa8ea4c0a7 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/TrafficCone.lisp
 cd67c2be65c21829ce536163f408200a /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Trafficcone.lisp
 05a4c30e0ea61d304972d7a0ba8e0075 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Waypoint.lisp
@@ -44,6 +47,7 @@ e6ed8b65b75918cbfc318b0fa661c3b8 /home/foscar/hwamok_lidar/devel/share/common-li
 f0e484861091b955e45806580ebac85c /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/Delivery.js
 922b6fbdf5ea5b7140ec749a3db386e9 /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/DriveValues.js
 38de4a43e3ce9a7855c0095e4f1d3fd7 /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/DynamicVelocity.js
+68ce88726c69e2996952506e5440e9e6 /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/ObjectInfo.js
 f4c7930467a5c81c54ff354ef752113c /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/TrafficCone.js
 1d7d902f22e81ee843f8a612c75f1cfa /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/Trafficcone.js
 f4e5306f4178c674cab34f971396be49 /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/lidar_object_detector/msg/Waypoint.js
@@ -56,6 +60,7 @@ e843eb3dc2f3ec1520305617f1cd7164 /home/foscar/hwamok_lidar/devel/share/gennodejs
 97af0ff12ce62e7cfa9b11e693b765dd /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Delivery.l
 41ac5924846081c298f67454ff1e9e41 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DriveValues.l
 bd980f1426c545b19bdb8c79986f1f81 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DynamicVelocity.l
+6f8b302568023e21875e6fa0f75b4082 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/ObjectInfo.l
 b1d9f6be2774e0a200cdc23282bc0206 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/TrafficCone.l
 15b9de64c2820ba447e4e6ee5dd71ac7 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Trafficcone.l
 c204618110e71056bf3a91b38c0be956 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Waypoint.l
@@ -70,7 +75,7 @@ e18426e1b207207865540534e55487d6 /home/foscar/hwamok_lidar/devel/share/roseus/ro
 839c112f2d66a8363eae5a31deffcf71 lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Delivery
 b377d23b3aea3853db698a6030ba71ee lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DriveValues
 290a22e9c004465fb99bdb0c829d3377 lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_DynamicVelocity
-6ff6d046a9887dc47400f6bc0488d5da lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone
+8f2c1e8cb7e69cd2eab0dfd2c92496fa lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_ObjectInfo
 45a5f8401738df8ebc94fd13a7e05270 lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint
 78cb1abc790b4c816eb8cd3be7385d01 lidar_object_detector/CMakeFiles/lidar_object_detector_gencfg
 78cb1abc790b4c816eb8cd3be7385d01 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp

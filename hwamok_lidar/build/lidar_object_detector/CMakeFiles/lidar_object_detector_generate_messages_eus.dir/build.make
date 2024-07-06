@@ -58,7 +58,7 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /h
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DriveValues.l
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Delivery.l
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DynamicVelocity.l
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Trafficcone.l
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/ObjectInfo.l
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/manifest.l
 
 
@@ -87,10 +87,10 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus: /h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from lidar_object_detector/DynamicVelocity.msg"
 	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg
 
-/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Trafficcone.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Trafficcone.l: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from lidar_object_detector/Trafficcone.msg"
-	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg
+/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/ObjectInfo.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/ObjectInfo.l: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from lidar_object_detector/ObjectInfo.msg"
+	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg
 
 /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp manifest code for lidar_object_detector"
@@ -102,7 +102,7 @@ lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/sha
 lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DriveValues.l
 lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Delivery.l
 lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DynamicVelocity.l
-lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Trafficcone.l
+lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/ObjectInfo.l
 lidar_object_detector_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/manifest.l
 lidar_object_detector_generate_messages_eus: lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_eus.dir/build.make
 

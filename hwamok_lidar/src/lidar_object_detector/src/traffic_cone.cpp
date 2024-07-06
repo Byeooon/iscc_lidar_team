@@ -75,7 +75,7 @@ void cloud_cb(const sensor_msgs::PointCloud2ConstPtr& inputcloud) {
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
     pcl::fromROSMsg(*inputcloud, *cloud);
 
-    lidar_object_detector::Trafficcone trafficconeMsg;
+    lidar_object_detector::Trafficcone ObjectInfoMsg;
     visualization_msgs::MarkerArray markerArray; 
     visualization_msgs::Marker marker;
 
@@ -150,12 +150,12 @@ void cloud_cb(const sensor_msgs::PointCloud2ConstPtr& inputcloud) {
         float center_y = (minPoint.y + maxPoint.y)/2; //직육면체 중심 y 좌표
         float center_z = (minPoint.z + maxPoint.z)/2; //직육면체 중심 z 좌표 
 
-        trafficconeMsg.lengthX[cluster_id] = x_len;
-        trafficconeMsg.lengthY[cluster_id] = y_len;
-        trafficconeMsg.lengthZ[cluster_id] = z_len;
-        trafficconeMsg.centerX[cluster_id] = center_x;
-        trafficconeMsg.centerY[cluster_id] = center_y;
-        trafficconeMsg.centerZ[cluster_id] = center_z;
+        ObjectInfoMsg.lengthX[cluster_id] = x_len;
+        ObjectInfoMsg.lengthY[cluster_id] = y_len;
+        ObjectInfoMsg.lengthZ[cluster_id] = z_len;
+        ObjectInfoMsg.centerX[cluster_id] = center_x;
+        ObjectInfoMsg.centerY[cluster_id] = center_y;
+        ObjectInfoMsg.centerZ[cluster_id] = center_z;
 
         // 여기에 Marker 생성 코드 추가        
         marker.header.frame_id = "velodyne";
@@ -165,14 +165,14 @@ void cloud_cb(const sensor_msgs::PointCloud2ConstPtr& inputcloud) {
         marker.type = visualization_msgs::Marker::CUBE;
         marker.action = visualization_msgs::Marker::ADD;
 
-        center_x = trafficconeMsg.centerX[cluster_id];
-        center_y = trafficconeMsg.centerY[cluster_id];
-        center_z = trafficconeMsg.centerZ[cluster_id];
+        center_x = ObjectInfoMsg.centerX[cluster_id];
+        center_y = ObjectInfoMsg.centerY[cluster_id];
+        center_z = ObjectInfoMsg.centerZ[cluster_id];
 
         // 위치 설정
-        marker.pose.position.x = trafficconeMsg.centerX[cluster_id];
-        marker.pose.position.y = trafficconeMsg.centerY[cluster_id];
-        marker.pose.position.z = trafficconeMsg.centerZ[cluster_id];
+        marker.pose.position.x = ObjectInfoMsg.centerX[cluster_id];
+        marker.pose.position.y = ObjectInfoMsg.centerY[cluster_id];
+        marker.pose.position.z = ObjectInfoMsg.centerZ[cluster_id];
 
         // 방향 설정 (회전 없음)
         marker.pose.orientation.x = 0.0;
@@ -244,8 +244,8 @@ void cloud_cb(const sensor_msgs::PointCloud2ConstPtr& inputcloud) {
         clusterPub.publish(cluster);
     }
 
-    trafficconeMsg.objectCounts = cluster_id;
-    pubTrafficcone.publish(trafficconeMsg);
+    ObjectInfoMsg.objectCounts = cluster_id;
+    pubTrafficcone.publish(ObjectInfoMsg);
 
     markerPub.publish(markerArray);
 

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
+messages_str = "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg;/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg"
 services_str = ""
 pkg_name = "lidar_object_detector"
 dependencies_str = "sensor_msgs;std_msgs;geometry_msgs;nav_msgs"

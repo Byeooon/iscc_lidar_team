@@ -23,7 +23,7 @@ add_message_files(
     DriveValues.msg
     Delivery.msg
     DynamicVelocity.msg
-    Trafficcone.msg
+    ObjectInfo.msg
     )
     
 generate_messages(

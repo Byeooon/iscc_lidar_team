@@ -65,7 +65,10 @@ add_executable(waypoint_maker src/waypoint_maker.cpp)
 add_dependencies(waypoint_maker ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## 실행 파일을 링크할 라이브러리 지정
-target_link_libraries(waypoint_maker
+target_link_libraries(
+  waypoint_maker
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
+
+add_dependencies(waypoint_maker ${PROJECT_NAME}_gencfg)

@@ -42,9 +42,9 @@ add_custom_target(_lidar_object_detector_generate_messages_check_deps_${_filenam
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lidar_object_detector" "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg" ""
 )
 
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" NAME_WE)
+get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" NAME_WE)
 add_custom_target(_lidar_object_detector_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lidar_object_detector" "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lidar_object_detector" "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" ""
 )
 
 #
@@ -84,7 +84,7 @@ _generate_msg_cpp(lidar_object_detector
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lidar_object_detector
 )
 _generate_msg_cpp(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
+  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lidar_object_detector
@@ -114,7 +114,7 @@ get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_det
 add_dependencies(lidar_object_detector_generate_messages_cpp _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_cpp _lidar_object_detector_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" NAME_WE)
+get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_cpp _lidar_object_detector_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,7 +157,7 @@ _generate_msg_eus(lidar_object_detector
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lidar_object_detector
 )
 _generate_msg_eus(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
+  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lidar_object_detector
@@ -187,7 +187,7 @@ get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_det
 add_dependencies(lidar_object_detector_generate_messages_eus _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_eus _lidar_object_detector_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" NAME_WE)
+get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_eus _lidar_object_detector_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -230,7 +230,7 @@ _generate_msg_lisp(lidar_object_detector
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lidar_object_detector
 )
 _generate_msg_lisp(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
+  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lidar_object_detector
@@ -260,7 +260,7 @@ get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_det
 add_dependencies(lidar_object_detector_generate_messages_lisp _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_lisp _lidar_object_detector_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" NAME_WE)
+get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_lisp _lidar_object_detector_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -303,7 +303,7 @@ _generate_msg_nodejs(lidar_object_detector
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lidar_object_detector
 )
 _generate_msg_nodejs(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
+  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lidar_object_detector
@@ -333,7 +333,7 @@ get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_det
 add_dependencies(lidar_object_detector_generate_messages_nodejs _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_nodejs _lidar_object_detector_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" NAME_WE)
+get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_nodejs _lidar_object_detector_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -376,7 +376,7 @@ _generate_msg_py(lidar_object_detector
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lidar_object_detector
 )
 _generate_msg_py(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
+  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lidar_object_detector
@@ -406,7 +406,7 @@ get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_det
 add_dependencies(lidar_object_detector_generate_messages_py _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_py _lidar_object_detector_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg" NAME_WE)
+get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_py _lidar_object_detector_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

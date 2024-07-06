@@ -47,9 +47,9 @@
 #include <geometry_msgs/PoseArray.h>
 
 #include <std_msgs/Bool.h>
-
+#include <lidar_object_detector/Trafficcone.h> 
 // #include <lidar_team_morai/Boundingbox.h>
-// #include <lidar_team_morai/Waypoint.h>
+#include <waypoint_maker/Waypoint.h>
 // #include <lidar_team_morai/DynamicVelocity.h>
 #include <waypoint_maker/ObjectInfo.h>
 

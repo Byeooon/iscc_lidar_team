@@ -58,7 +58,7 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /ho
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DriveValues.py
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Delivery.py
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DynamicVelocity.py
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Trafficcone.py
+lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_ObjectInfo.py
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py
 
 
@@ -87,10 +87,10 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /ho
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG lidar_object_detector/DynamicVelocity"
 	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg
 
-/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Trafficcone.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Trafficcone.py: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG lidar_object_detector/Trafficcone"
-	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg
+/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_ObjectInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_ObjectInfo.py: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG lidar_object_detector/ObjectInfo"
+	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg
 
 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Waypoint.py
@@ -98,7 +98,7 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py: /ho
 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DriveValues.py
 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Delivery.py
 /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DynamicVelocity.py
-/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Trafficcone.py
+/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_ObjectInfo.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python msg __init__.py for lidar_object_detector"
 	cd /home/foscar/hwamok_lidar/build/lidar_object_detector && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg --initpy
 
@@ -108,7 +108,7 @@ lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/
 lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DriveValues.py
 lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Delivery.py
 lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_DynamicVelocity.py
-lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_Trafficcone.py
+lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/_ObjectInfo.py
 lidar_object_detector_generate_messages_py: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/lidar_object_detector/msg/__init__.py
 lidar_object_detector_generate_messages_py: lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_py.dir/build.make
 
