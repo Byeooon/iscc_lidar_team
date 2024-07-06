@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(waypoint_maker_EXPORTED_TARGETS "waypoint_maker_generate_messages_cpp;waypoint_maker_generate_messages_eus;waypoint_maker_generate_messages_lisp;waypoint_maker_generate_messages_nodejs;waypoint_maker_generate_messages_py")
+set(waypoint_maker_EXPORTED_TARGETS "waypoint_maker_generate_messages_cpp;waypoint_maker_generate_messages_eus;waypoint_maker_generate_messages_lisp;waypoint_maker_generate_messages_nodejs;waypoint_maker_generate_messages_py;waypoint_maker_gencfg")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${waypoint_maker_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${waypoint_maker_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;std_msgs;sensor_msgs;pcl_conversions;pcl_ros;message_runtime")
+set(depends "roscpp;std_msgs;sensor_msgs;pcl_conversions;pcl_ros;message_runtime;dynamic_reconfigure")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

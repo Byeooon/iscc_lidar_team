@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Delivery.lisp"
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DriveValues.lisp"
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DynamicVelocity.lisp"
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/TrafficCone.lisp"
+  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Trafficcone.lisp"
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Waypoint.lisp"
   "CMakeFiles/lidar_object_detector_generate_messages_lisp"
 )

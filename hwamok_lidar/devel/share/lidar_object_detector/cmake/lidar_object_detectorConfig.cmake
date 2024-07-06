@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(lidar_object_detector_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/foscar/hwamok_lidar/devel/include;/home/foscar/hwamok_lidar/src/lidar_object_detector/include " STREQUAL " ")
+if(NOT "/home/foscar/hwamok_lidar/devel/include " STREQUAL " ")
   set(lidar_object_detector_INCLUDE_DIRS "")
-  set(_include_dirs "/home/foscar/hwamok_lidar/devel/include;/home/foscar/hwamok_lidar/src/lidar_object_detector/include")
+  set(_include_dirs "/home/foscar/hwamok_lidar/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")

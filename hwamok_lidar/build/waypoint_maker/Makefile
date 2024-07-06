@@ -183,6 +183,21 @@ waypoint_maker/fast:
 .PHONY : waypoint_maker/fast
 
 # Convenience name for target.
+waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule:
+	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
+.PHONY : waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
+
+# Convenience name for target.
+waypoint_maker_gencfg: waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
+
+.PHONY : waypoint_maker_gencfg
+
+# fast build rule for target.
+waypoint_maker_gencfg/fast:
+	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build
+.PHONY : waypoint_maker_gencfg/fast
+
+# Convenience name for target.
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/rule:
 	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/rule
 .PHONY : waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/rule
@@ -413,8 +428,9 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... waypoint_maker"
+	@echo "... test"
+	@echo "... waypoint_maker_gencfg"
 	@echo "... waypoint_maker_generate_messages"
 	@echo "... _waypoint_maker_generate_messages_check_deps_ObjectInfo"
 	@echo "... waypoint_maker_genpy"

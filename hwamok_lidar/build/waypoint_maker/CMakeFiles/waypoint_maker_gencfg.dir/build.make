@@ -53,34 +53,34 @@ CMAKE_BINARY_DIR = /home/foscar/hwamok_lidar/build
 # Include the progress variables for this target.
 include waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/progress.make
 
-waypoint_maker/CMakeFiles/waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
-waypoint_maker/CMakeFiles/waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypointMakerConfig.py
+waypoint_maker/CMakeFiles/waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h
+waypoint_maker/CMakeFiles/waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py
 
 
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h: /home/foscar/hwamok_lidar/src/waypoint_maker/cfg/waypointMaker.cfg
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/waypointMaker.cfg: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypointMakerConfig.py"
-	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /home/foscar/hwamok_lidar/build/waypoint_maker/setup_custom_pythonpath.sh /home/foscar/hwamok_lidar/src/waypoint_maker/cfg/waypointMaker.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/foscar/hwamok_lidar/devel/share/waypoint_maker /home/foscar/hwamok_lidar/devel/include/waypoint_maker /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker
+/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h: /home/foscar/hwamok_lidar/src/waypoint_maker/cfg/waypoint_maker.cfg
+/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h: /opt/ros/noetic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/waypoint_maker.cfg: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py"
+	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /home/foscar/hwamok_lidar/build/waypoint_maker/setup_custom_pythonpath.sh /home/foscar/hwamok_lidar/src/waypoint_maker/cfg/waypoint_maker.cfg /opt/ros/noetic/share/dynamic_reconfigure/cmake/.. /home/foscar/hwamok_lidar/devel/share/waypoint_maker /home/foscar/hwamok_lidar/devel/include/waypoint_maker /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker
 
-/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig.dox: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig.dox
+/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.dox: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.dox
 
-/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig-usage.dox: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig-usage.dox
+/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig-usage.dox: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig-usage.dox
 
-/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypointMakerConfig.py: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypointMakerConfig.py
+/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py
 
-/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig.wikidoc: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig.wikidoc
+/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.wikidoc: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.wikidoc
 
 waypoint_maker_gencfg: waypoint_maker/CMakeFiles/waypoint_maker_gencfg
-waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
-waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig.dox
-waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig-usage.dox
-waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypointMakerConfig.py
-waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypointMakerConfig.wikidoc
+waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h
+waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.dox
+waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig-usage.dox
+waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py
+waypoint_maker_gencfg: /home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.wikidoc
 waypoint_maker_gencfg: waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build.make
 
 .PHONY : waypoint_maker_gencfg

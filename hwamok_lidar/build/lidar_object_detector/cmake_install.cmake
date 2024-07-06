@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg"
     "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg"
     "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg"
-    "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/TrafficCone.msg"
+    "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Trafficcone.msg"
     )
 endif()
 

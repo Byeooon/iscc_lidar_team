@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/TrafficCone.h
+/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Trafficcone.h
 string
 -
 vector
@@ -149,7 +149,7 @@ visualization_msgs/MarkerArray.h
 -
 vector
 -
-lidar_object_detector/TrafficCone.h
+lidar_object_detector/Trafficcone.h
 -
 header.h
 /home/foscar/hwamok_lidar/src/lidar_object_detector/src/header.h

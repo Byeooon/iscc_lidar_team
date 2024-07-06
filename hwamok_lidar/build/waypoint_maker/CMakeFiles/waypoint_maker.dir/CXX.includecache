@@ -22,23 +22,25 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h
-string
+/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
+dynamic_reconfigure/config_tools.h
 -
-vector
+limits
 -
-memory
+ros/node_handle.h
 -
-ros/types.h
+dynamic_reconfigure/ConfigDescription.h
 -
-ros/serialization.h
+dynamic_reconfigure/ParamDescription.h
 -
-ros/builtin_message_traits.h
+dynamic_reconfigure/Group.h
 -
-ros/message_operations.h
+dynamic_reconfigure/config_init_mutex.h
+-
+boost/any.hpp
 -
 
-/home/foscar/hwamok_lidar/src/waypoint_maker/src/header.h
+/home/foscar/hwamok_lidar/src/waypoint_maker/include/waypoint_maker.h
 iostream
 -
 string
@@ -119,14 +121,16 @@ geometry_msgs/PoseArray.h
 -
 std_msgs/Bool.h
 -
-waypoint_maker/Waypoint.h
--
 waypoint_maker/ObjectInfo.h
 -
+dynamic_reconfigure/server.h
+-
+waypoint_maker/waypointMakerConfig.h
+/home/foscar/hwamok_lidar/src/waypoint_maker/include/waypoint_maker/waypointMakerConfig.h
 
 /home/foscar/hwamok_lidar/src/waypoint_maker/src/waypoint_maker.cpp
-header.h
-/home/foscar/hwamok_lidar/src/waypoint_maker/src/header.h
+../include/waypoint_maker.h
+/home/foscar/hwamok_lidar/src/waypoint_maker/include/waypoint_maker.h
 
 /opt/ros/noetic/include/dynamic_reconfigure/BoolParameter.h
 string
@@ -334,6 +338,22 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
+-
+
+/opt/ros/noetic/include/dynamic_reconfigure/config_init_mutex.h
+boost/thread/mutex.hpp
+-
+ros/macros.h
+-
+
+/opt/ros/noetic/include/dynamic_reconfigure/config_tools.h
+string
+-
+vector
+-
+dynamic_reconfigure/Config.h
+-
+dynamic_reconfigure/Group.h
 -
 
 /opt/ros/noetic/include/dynamic_reconfigure/server.h

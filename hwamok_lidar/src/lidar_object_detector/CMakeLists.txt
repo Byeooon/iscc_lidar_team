@@ -23,7 +23,7 @@ add_message_files(
     DriveValues.msg
     Delivery.msg
     DynamicVelocity.msg
-    TrafficCone.msg
+    Trafficcone.msg
     )
     
 generate_messages(
@@ -39,7 +39,6 @@ generate_dynamic_reconfigure_options(
     )
 
 catkin_package(
-    INCLUDE_DIRS include
     LIBRARIES lidar_object_detector
     CATKIN_DEPENDS pcl_conversions pcl_ros roscpp sensor_msgs visualization_msgs nav_msgs geometry_msgs std_msgs dynamic_reconfigure
 )

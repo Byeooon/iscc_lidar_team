@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Delivery.l"
   "/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DriveValues.l"
   "/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/DynamicVelocity.l"
-  "/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/TrafficCone.l"
+  "/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Trafficcone.l"
   "/home/foscar/hwamok_lidar/devel/share/roseus/ros/lidar_object_detector/msg/Waypoint.l"
   "CMakeFiles/lidar_object_detector_generate_messages_eus"
 )

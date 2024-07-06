@@ -3,8 +3,8 @@
 
 waypoint_maker/CMakeFiles/waypoint_maker.dir/src/waypoint_maker.cpp.o
  /home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h
- /home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h
- /home/foscar/hwamok_lidar/src/waypoint_maker/src/header.h
+ /home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypointMakerConfig.h
+ /home/foscar/hwamok_lidar/src/waypoint_maker/include/waypoint_maker.h
  /home/foscar/hwamok_lidar/src/waypoint_maker/src/waypoint_maker.cpp
  /opt/ros/noetic/include/dynamic_reconfigure/BoolParameter.h
  /opt/ros/noetic/include/dynamic_reconfigure/Config.h
@@ -18,6 +18,8 @@ waypoint_maker/CMakeFiles/waypoint_maker.dir/src/waypoint_maker.cpp.o
  /opt/ros/noetic/include/dynamic_reconfigure/ReconfigureRequest.h
  /opt/ros/noetic/include/dynamic_reconfigure/ReconfigureResponse.h
  /opt/ros/noetic/include/dynamic_reconfigure/StrParameter.h
+ /opt/ros/noetic/include/dynamic_reconfigure/config_init_mutex.h
+ /opt/ros/noetic/include/dynamic_reconfigure/config_tools.h
  /opt/ros/noetic/include/dynamic_reconfigure/server.h
  /opt/ros/noetic/include/geometry_msgs/Point.h
  /opt/ros/noetic/include/geometry_msgs/Pose.h

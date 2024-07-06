@@ -1,7 +1,7 @@
 
 "use strict";
 
-let TrafficCone = require('./TrafficCone.js');
+let Trafficcone = require('./Trafficcone.js');
 let Delivery = require('./Delivery.js');
 let Boundingbox = require('./Boundingbox.js');
 let DynamicVelocity = require('./DynamicVelocity.js');
@@ -9,7 +9,7 @@ let Waypoint = require('./Waypoint.js');
 let DriveValues = require('./DriveValues.js');
 
 module.exports = {
-  TrafficCone: TrafficCone,
+  Trafficcone: Trafficcone,
   Delivery: Delivery,
   Boundingbox: Boundingbox,
   DynamicVelocity: DynamicVelocity,

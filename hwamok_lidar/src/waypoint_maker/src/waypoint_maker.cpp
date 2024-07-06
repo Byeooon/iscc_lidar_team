@@ -1,4 +1,5 @@
-#include "header.h"
+#include "../include/waypoint_maker.h"
+
 #define SWAP(x, y, t) ((t) = (x), (x) = (y), (y) = (t))
 
 using namespace std;
@@ -6,6 +7,18 @@ using namespace std;
 #define X_CMP 1
 #define Y_CMP 2
 #define D_CMP 3
+
+namespace waypoint_maker {
+    struct waypointMakerConfig {
+        double xMinRubberCone;
+        double xMaxRubberCone;
+        double yMinRubberCone;
+        double yMaxRubberCone;
+        double zMinRubberCone;
+        double zMaxRubberCone;
+    };
+}
+
 typedef struct Object {
     double centerX;
     double centerY;
@@ -22,6 +35,12 @@ typedef struct ObjectArray
     int size = 0;
     Object objectArray[100];
 }ObjectArray;
+
+typedef struct
+{
+    int size = 0;
+    Object* cone[30];
+}ConeArray;
 
 int partition(Object list[], int left, int right, int cmp) {
     switch (cmp) {
@@ -104,11 +123,17 @@ int partition(Object list[], int left, int right, int cmp) {
     }
 }
 
-typedef struct
-{
-    int size = 0;
-    Object* cone[30];
-}ConeArray;
+void quickSort(Object array[], int left, int right, int cmp) {
+    if (left < right) {
+        int p = partition(array, left, right, cmp);
+        quickSort(array, left, p - 1, cmp);
+        quickSort(array, p + 1, right, cmp);
+    }
+}
+
+double getDistanceObjectToObject(const Object &obj1, const Object &obj2) {
+    return sqrt( pow(obj1.centerX - obj2.centerX, 2) + pow(obj1.centerY - obj2.centerY, 2) );
+}
 
 class WaypointMaker{
     // attribute
@@ -135,8 +160,8 @@ class WaypointMaker{
     ros::Publisher visualizeWaypointInfoMsgPub; // 이름 그대로를 수행하는 Publisher
     ros::Publisher visualizePivotPub; // 이름 그대로를 수행하는 Publisher
     
-public:
-
+    public:
+    
     double xMinRubberCone;
     double xMaxRubberCone;
     double yMinRubberCone;
@@ -160,7 +185,7 @@ public:
         rightPivot.centerZ = 0.0;
 
         // subscribe
-        mainSub = nh.subscribe("/object_info", 1, &WaypointMaker::mainCallback, this);
+        mainSub = nh.subscribe("/traffic_cone", 1, &WaypointMaker::mainCallback, this);
 
         visualizeConePub = nh.advertise<visualization_msgs::MarkerArray>("/cone_marker", 0.001);
         waypointInfoPub = nh.advertise<waypoint_maker::Waypoint>("/waypoint_info", 0.001);
@@ -184,7 +209,6 @@ public:
 };
 
 void WaypointMaker::mainCallback(const waypoint_maker::ObjectInfo& msg) {
-    // 이걸 하겠구나 하면 그 행동을 하는 함수입니다.
     setObjectInfo(msg);
     setLeftRightConeInfo();
     setWaypointInfo();
@@ -193,17 +217,6 @@ void WaypointMaker::mainCallback(const waypoint_maker::ObjectInfo& msg) {
     // visualizeLeftRightCone();
     // visualizeWaypointInfoMsg();
     // visualizePivot();
-}
-void quickSort(Object array[], int left, int right, int cmp) {
-    if (left < right) {
-        int p = partition(array, left, right, cmp);
-        quickSort(array, left, p - 1, cmp);
-        quickSort(array, p + 1, right, cmp);
-    }
-}
-
-double getDistanceObjectToObject(const Object &obj1, const Object &obj2) {
-    return sqrt( pow(obj1.centerX - obj2.centerX, 2) + pow(obj1.centerY - obj2.centerY, 2) );
 }
 
 void WaypointMaker::setObjectInfo(const waypoint_maker::ObjectInfo& msg) {
@@ -345,8 +358,141 @@ void WaypointMaker::setWaypointInfo() {
     waypointInfoPub.publish(waypointInfoMsg);
 }
 
-int main(int argc, char **argv){
-  ros::init(argc, argv, "waypoint_maker");
+void WaypointMaker::visualizeLeftRightCone() {
+    visualization_msgs::Marker coneObject;
+    visualization_msgs::MarkerArray coneObjectArray;
+
+    coneObject.header.frame_id = "velodyne";
+    coneObject.header.stamp = ros::Time();
+    coneObject.type = visualization_msgs::Marker::CYLINDER; 
+    coneObject.action = visualization_msgs::Marker::ADD;
+
+    coneObject.scale.x = 0.5;
+    coneObject.scale.y = 0.5;
+    coneObject.scale.z = 0.8;
+
+    coneObject.color.a = 0.5;
+    coneObject.color.r = 1.0;
+    coneObject.color.g = 1.0;
+    coneObject.color.b = 0.0;
+
+    coneObject.lifetime = ros::Duration(0.1);
+
+    for (int i = 0; i < leftCones.size; i++) {
+        coneObject.id = 100 + i;
+
+        coneObject.pose.position.x = leftCones.cone[i]->centerX;
+        coneObject.pose.position.y = leftCones.cone[i]->centerY;
+        coneObject.pose.position.z = leftCones.cone[i]->centerZ;
+
+        coneObjectArray.markers.emplace_back(coneObject);
+    }
+
+    coneObject.color.a = 0.5; 
+    coneObject.color.r = 0.0; 
+    coneObject.color.g = 0.0;
+    coneObject.color.b = 1.0;
+
+    for (int i = 0; i < rightCones.size; i++) {
+        coneObject.id = 200 + i; 
+
+        coneObject.pose.position.x = rightCones.cone[i]->centerX;
+        coneObject.pose.position.y = rightCones.cone[i]->centerY;
+        coneObject.pose.position.z = rightCones.cone[i]->centerZ;
+
+        coneObjectArray.markers.emplace_back(coneObject);
+    }
+    visualizeConePub.publish(coneObjectArray);
+}
+
+void WaypointMaker::visualizeWaypointInfoMsg() {
+    visualization_msgs::Marker waypoint;
+    visualization_msgs::MarkerArray waypointArray;
+
+    for (int i = 0; i < waypointInfoMsg.cnt; i++) {
+        waypoint.header.frame_id = "velodyne";
+        waypoint.header.stamp = ros::Time();
+    
+        waypoint.id = 200 + i;
+        waypoint.type = visualization_msgs::Marker::SPHERE; 
+        waypoint.action = visualization_msgs::Marker::ADD;
+
+        waypoint.pose.position.x = waypointInfoMsg.x_arr[i];
+        waypoint.pose.position.y = waypointInfoMsg.y_arr[i];
+        waypoint.pose.position.z = 0.2;
+
+        waypoint.scale.x = 0.5;
+        waypoint.scale.y = 0.5;
+        waypoint.scale.z = 0.5;
+
+        waypoint.color.a = 1.0; 
+        waypoint.color.r = 1.0; 
+        waypoint.color.g = 0.0;
+        waypoint.color.b = 0.0;
+
+        waypoint.lifetime = ros::Duration(0.1);
+        waypointArray.markers.emplace_back(waypoint);
+    }
+    visualizeWaypointInfoMsgPub.publish(waypointArray);
+}
+
+void WaypointMaker::visualizePivot() {
+    visualization_msgs::Marker pivotObject;
+    visualization_msgs::MarkerArray pivotObjectArray;
+
+    pivotObject.header.frame_id = "velodyne";
+    pivotObject.header.stamp = ros::Time();
+    pivotObject.type = visualization_msgs::Marker::CYLINDER; 
+    pivotObject.action = visualization_msgs::Marker::ADD;
+
+    pivotObject.scale.x = 0.5;
+    pivotObject.scale.y = 0.5;
+    pivotObject.scale.z = 0.8;
+
+    pivotObject.color.a = 1.0;
+    pivotObject.color.r = 1.0;
+    pivotObject.color.g = 1.0;
+    pivotObject.color.b = 0.0;
+
+    pivotObject.lifetime = ros::Duration(0.1);
+
+    
+    pivotObject.id = 33;
+
+    pivotObject.pose.position.x = leftPivot.centerX;
+    pivotObject.pose.position.y = leftPivot.centerY;
+    pivotObject.pose.position.z = leftPivot.centerZ;
+
+    pivotObjectArray.markers.emplace_back(pivotObject);
+    
+
+    pivotObject.color.a = 1.0; 
+    pivotObject.color.r = 0.0; 
+    pivotObject.color.g = 0.0;
+    pivotObject.color.b = 1.0;
+
+    pivotObject.id = 34; 
+
+    pivotObject.pose.position.x = rightPivot.centerX;
+    pivotObject.pose.position.y = rightPivot.centerY;
+    pivotObject.pose.position.z = rightPivot.centerZ;
+
+    pivotObjectArray.markers.emplace_back(pivotObject);
+
+    visualizePivotPub.publish(pivotObjectArray);
+}
+
+void cfgCallback(waypoint_maker::waypoint_makerConfig &config, WaypointMaker* wm) {
+    wm->xMinRubberCone = config.xMinRubberCone;
+    wm->xMaxRubberCone = config.xMaxRubberCone;
+    wm->yMinRubberCone = config.yMinRubberCone;
+    wm->yMaxRubberCone = config.yMaxRubberCone;
+    wm->zMinRubberCone = config.zMinRubberCone;
+    wm->zMaxRubberCone = config.zMaxRubberCone;
+}
+
+int main(int argc, char **argv) {
+    ros::init(argc, argv, "waypoint_maker");
     
     WaypointMaker waypointMaker;
     

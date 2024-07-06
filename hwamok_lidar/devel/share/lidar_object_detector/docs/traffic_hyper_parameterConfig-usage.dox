@@ -11,11 +11,11 @@
   <param name="traffic_yMaxROI" type="double" value="5.0" />
   <param name="traffic_zMinROI" type="double" value="-0.5" />
   <param name="traffic_zMaxROI" type="double" value="1.0" />
-  <param name="traffic_xMinBoundingBox" type="double" value="0.05" />
+  <param name="traffic_xMinBoundingBox" type="double" value="0.0" />
   <param name="traffic_xMaxBoundingBox" type="double" value="0.5" />
-  <param name="traffic_yMinBoundingBox" type="double" value="0.05" />
+  <param name="traffic_yMinBoundingBox" type="double" value="0.0" />
   <param name="traffic_yMaxBoundingBox" type="double" value="0.6" />
-  <param name="traffic_zMinBoundingBox" type="double" value="0.05" />
+  <param name="traffic_zMinBoundingBox" type="double" value="0.0" />
   <param name="traffic_zMaxBoundingBox" type="double" value="0.85" />
 </node>
 \endverbatim

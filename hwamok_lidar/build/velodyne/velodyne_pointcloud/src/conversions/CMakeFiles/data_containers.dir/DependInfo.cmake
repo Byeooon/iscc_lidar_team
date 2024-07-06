@@ -21,6 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/foscar/hwamok_lidar/devel/include"
+  "/home/foscar/hwamok_lidar/src/include"
   "/home/foscar/hwamok_lidar/src/velodyne/velodyne_pointcloud/include"
   "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/include"
   "/opt/ros/noetic/include"

@@ -3,7 +3,7 @@
 
 lidar_object_detector/CMakeFiles/traffic_cone.dir/src/traffic_cone.cpp.o
  /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h
- /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/TrafficCone.h
+ /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Trafficcone.h
  /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/traffic_hyper_parameterConfig.h
  /home/foscar/hwamok_lidar/src/lidar_object_detector/src/dbscan.h
  /home/foscar/hwamok_lidar/src/lidar_object_detector/src/header.h

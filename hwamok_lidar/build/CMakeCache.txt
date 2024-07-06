@@ -73,9 +73,6 @@ CATKIN_DEVEL_PREFIX:PATH=/home/foscar/hwamok_lidar/devel
 //Catkin enable testing
 CATKIN_ENABLE_TESTING:BOOL=ON
 
-//Prefix to apply to package generated via gendebian
-CATKIN_PACKAGE_PREFIX:STRING=
-
 //Catkin skip testing
 CATKIN_SKIP_TESTING:BOOL=OFF
 
@@ -170,7 +167,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -265,7 +262,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=hwamok_lidar
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.10.0
@@ -658,7 +655,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=foscar
+SITE:STRING=foscar-All-Series
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -831,12 +828,6 @@ lidar_object_detector_BINARY_DIR:STATIC=/home/foscar/hwamok_lidar/build/lidar_ob
 
 //Value Computed by CMake
 lidar_object_detector_SOURCE_DIR:STATIC=/home/foscar/hwamok_lidar/src/lidar_object_detector
-
-//Value Computed by CMake
-lidar_team_1_BINARY_DIR:STATIC=/home/foscar/hwamok_lidar/build/lidar_team_1
-
-//Value Computed by CMake
-lidar_team_1_SOURCE_DIR:STATIC=/home/foscar/hwamok_lidar/src/lidar_team_1
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake

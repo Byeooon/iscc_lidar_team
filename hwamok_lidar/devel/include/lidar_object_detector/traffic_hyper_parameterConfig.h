@@ -558,7 +558,7 @@ traffic_hyper_parameterConfig::GroupDescription<traffic_hyper_parameterConfig::D
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.traffic_xMinBoundingBox = 1000.0;
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.traffic_xMinBoundingBox = 0.05;
+      __default__.traffic_xMinBoundingBox = 0.0;
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(traffic_hyper_parameterConfig::AbstractParamDescriptionConstPtr(new traffic_hyper_parameterConfig::ParamDescription<double>("traffic_xMinBoundingBox", "double", 0, "traffic_xMinBoundingBox", "", &traffic_hyper_parameterConfig::traffic_xMinBoundingBox)));
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -578,7 +578,7 @@ traffic_hyper_parameterConfig::GroupDescription<traffic_hyper_parameterConfig::D
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.traffic_yMinBoundingBox = 10.0;
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.traffic_yMinBoundingBox = 0.05;
+      __default__.traffic_yMinBoundingBox = 0.0;
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(traffic_hyper_parameterConfig::AbstractParamDescriptionConstPtr(new traffic_hyper_parameterConfig::ParamDescription<double>("traffic_yMinBoundingBox", "double", 0, "traffic_yMinBoundingBox", "", &traffic_hyper_parameterConfig::traffic_yMinBoundingBox)));
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
@@ -598,7 +598,7 @@ traffic_hyper_parameterConfig::GroupDescription<traffic_hyper_parameterConfig::D
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __max__.traffic_zMinBoundingBox = 0.1;
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.traffic_zMinBoundingBox = 0.05;
+      __default__.traffic_zMinBoundingBox = 0.0;
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(traffic_hyper_parameterConfig::AbstractParamDescriptionConstPtr(new traffic_hyper_parameterConfig::ParamDescription<double>("traffic_zMinBoundingBox", "double", 0, "traffic_zMinBoundingBox", "", &traffic_hyper_parameterConfig::traffic_zMinBoundingBox)));
 //#line 291 "/opt/ros/noetic/lib/python3/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"

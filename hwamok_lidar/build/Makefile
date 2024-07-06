@@ -584,17 +584,17 @@ lidar_object_detector_geneus/fast:
 .PHONY : lidar_object_detector_geneus/fast
 
 #=============================================================================
-# Target rules for targets named _lidar_object_detector_generate_messages_check_deps_TrafficCone
+# Target rules for targets named _lidar_object_detector_generate_messages_check_deps_Trafficcone
 
 # Build rule for target.
-_lidar_object_detector_generate_messages_check_deps_TrafficCone: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _lidar_object_detector_generate_messages_check_deps_TrafficCone
-.PHONY : _lidar_object_detector_generate_messages_check_deps_TrafficCone
+_lidar_object_detector_generate_messages_check_deps_Trafficcone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _lidar_object_detector_generate_messages_check_deps_Trafficcone
+.PHONY : _lidar_object_detector_generate_messages_check_deps_Trafficcone
 
 # fast build rule for target.
-_lidar_object_detector_generate_messages_check_deps_TrafficCone/fast:
-	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_TrafficCone.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_TrafficCone.dir/build
-.PHONY : _lidar_object_detector_generate_messages_check_deps_TrafficCone/fast
+_lidar_object_detector_generate_messages_check_deps_Trafficcone/fast:
+	$(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Trafficcone.dir/build
+.PHONY : _lidar_object_detector_generate_messages_check_deps_Trafficcone/fast
 
 #=============================================================================
 # Target rules for targets named _lidar_object_detector_generate_messages_check_deps_Waypoint
@@ -3314,6 +3314,19 @@ waypoint_maker/fast:
 .PHONY : waypoint_maker/fast
 
 #=============================================================================
+# Target rules for targets named waypoint_maker_gencfg
+
+# Build rule for target.
+waypoint_maker_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 waypoint_maker_gencfg
+.PHONY : waypoint_maker_gencfg
+
+# fast build rule for target.
+waypoint_maker_gencfg/fast:
+	$(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build
+.PHONY : waypoint_maker_gencfg/fast
+
+#=============================================================================
 # Target rules for targets named waypoint_maker_generate_messages
 
 # Build rule for target.
@@ -3527,7 +3540,7 @@ help:
 	@echo "... lidar_object_detector_genpy"
 	@echo "... lidar_object_detector_generate_messages_lisp"
 	@echo "... lidar_object_detector_geneus"
-	@echo "... _lidar_object_detector_generate_messages_check_deps_TrafficCone"
+	@echo "... _lidar_object_detector_generate_messages_check_deps_Trafficcone"
 	@echo "... _lidar_object_detector_generate_messages_check_deps_Waypoint"
 	@echo "... lidar_object_detector_generate_messages"
 	@echo "... nav_msgs_generate_messages_lisp"
@@ -3737,6 +3750,7 @@ help:
 	@echo "... _run_tests_velodyne_pointcloud_rostest_tests_transform_nodelet_64e_s2.1_hz.test"
 	@echo "... _run_tests_velodyne_pointcloud_rostest_tests_transform_node_vlp16_hz.test"
 	@echo "... waypoint_maker"
+	@echo "... waypoint_maker_gencfg"
 	@echo "... waypoint_maker_generate_messages"
 	@echo "... _waypoint_maker_generate_messages_check_deps_ObjectInfo"
 	@echo "... waypoint_maker_genpy"
