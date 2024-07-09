@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "waypoint_maker: 2 messages, 0 services")
+message(STATUS "waypoint_maker: 1 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -17,11 +17,6 @@ add_custom_target(waypoint_maker_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" NAME_WE)
-add_custom_target(_waypoint_maker_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "waypoint_maker" "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" ""
-)
-
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" NAME_WE)
 add_custom_target(_waypoint_maker_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "waypoint_maker" "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" ""
@@ -33,12 +28,6 @@ add_custom_target(_waypoint_maker_generate_messages_check_deps_${_filename}
 
 ### Section generating for lang: gencpp
 ### Generating Messages
-_generate_msg_cpp(waypoint_maker
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/waypoint_maker
-)
 _generate_msg_cpp(waypoint_maker
   "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
@@ -60,8 +49,6 @@ add_custom_target(waypoint_maker_generate_messages_cpp
 add_dependencies(waypoint_maker_generate_messages waypoint_maker_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" NAME_WE)
-add_dependencies(waypoint_maker_generate_messages_cpp _waypoint_maker_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" NAME_WE)
 add_dependencies(waypoint_maker_generate_messages_cpp _waypoint_maker_generate_messages_check_deps_${_filename})
 
@@ -74,12 +61,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS waypoint_maker_generate_messages_cp
 
 ### Section generating for lang: geneus
 ### Generating Messages
-_generate_msg_eus(waypoint_maker
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/waypoint_maker
-)
 _generate_msg_eus(waypoint_maker
   "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
@@ -101,8 +82,6 @@ add_custom_target(waypoint_maker_generate_messages_eus
 add_dependencies(waypoint_maker_generate_messages waypoint_maker_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" NAME_WE)
-add_dependencies(waypoint_maker_generate_messages_eus _waypoint_maker_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" NAME_WE)
 add_dependencies(waypoint_maker_generate_messages_eus _waypoint_maker_generate_messages_check_deps_${_filename})
 
@@ -115,12 +94,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS waypoint_maker_generate_messages_eu
 
 ### Section generating for lang: genlisp
 ### Generating Messages
-_generate_msg_lisp(waypoint_maker
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/waypoint_maker
-)
 _generate_msg_lisp(waypoint_maker
   "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
@@ -142,8 +115,6 @@ add_custom_target(waypoint_maker_generate_messages_lisp
 add_dependencies(waypoint_maker_generate_messages waypoint_maker_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" NAME_WE)
-add_dependencies(waypoint_maker_generate_messages_lisp _waypoint_maker_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" NAME_WE)
 add_dependencies(waypoint_maker_generate_messages_lisp _waypoint_maker_generate_messages_check_deps_${_filename})
 
@@ -156,12 +127,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS waypoint_maker_generate_messages_li
 
 ### Section generating for lang: gennodejs
 ### Generating Messages
-_generate_msg_nodejs(waypoint_maker
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/waypoint_maker
-)
 _generate_msg_nodejs(waypoint_maker
   "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
@@ -183,8 +148,6 @@ add_custom_target(waypoint_maker_generate_messages_nodejs
 add_dependencies(waypoint_maker_generate_messages waypoint_maker_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" NAME_WE)
-add_dependencies(waypoint_maker_generate_messages_nodejs _waypoint_maker_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" NAME_WE)
 add_dependencies(waypoint_maker_generate_messages_nodejs _waypoint_maker_generate_messages_check_deps_${_filename})
 
@@ -197,12 +160,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS waypoint_maker_generate_messages_no
 
 ### Section generating for lang: genpy
 ### Generating Messages
-_generate_msg_py(waypoint_maker
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/waypoint_maker
-)
 _generate_msg_py(waypoint_maker
   "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
@@ -224,8 +181,6 @@ add_custom_target(waypoint_maker_generate_messages_py
 add_dependencies(waypoint_maker_generate_messages waypoint_maker_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg" NAME_WE)
-add_dependencies(waypoint_maker_generate_messages_py _waypoint_maker_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg" NAME_WE)
 add_dependencies(waypoint_maker_generate_messages_py _waypoint_maker_generate_messages_check_deps_${_filename})
 

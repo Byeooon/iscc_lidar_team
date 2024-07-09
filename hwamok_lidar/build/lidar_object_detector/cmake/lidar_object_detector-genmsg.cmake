@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "lidar_object_detector: 6 messages, 0 services")
+message(STATUS "lidar_object_detector: 5 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg")
 
@@ -16,11 +16,6 @@ add_custom_target(lidar_object_detector_generate_messages ALL)
 # verify that message/service dependencies have not changed since configure
 
 
-
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" NAME_WE)
-add_custom_target(_lidar_object_detector_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lidar_object_detector" "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" ""
-)
 
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg" NAME_WE)
 add_custom_target(_lidar_object_detector_generate_messages_check_deps_${_filename}
@@ -53,12 +48,6 @@ add_custom_target(_lidar_object_detector_generate_messages_check_deps_${_filenam
 
 ### Section generating for lang: gencpp
 ### Generating Messages
-_generate_msg_cpp(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lidar_object_detector
-)
 _generate_msg_cpp(lidar_object_detector
   "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg"
   "${MSG_I_FLAGS}"
@@ -104,8 +93,6 @@ add_custom_target(lidar_object_detector_generate_messages_cpp
 add_dependencies(lidar_object_detector_generate_messages lidar_object_detector_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" NAME_WE)
-add_dependencies(lidar_object_detector_generate_messages_cpp _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_cpp _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg" NAME_WE)
@@ -126,12 +113,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lidar_object_detector_generate_mess
 
 ### Section generating for lang: geneus
 ### Generating Messages
-_generate_msg_eus(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lidar_object_detector
-)
 _generate_msg_eus(lidar_object_detector
   "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg"
   "${MSG_I_FLAGS}"
@@ -177,8 +158,6 @@ add_custom_target(lidar_object_detector_generate_messages_eus
 add_dependencies(lidar_object_detector_generate_messages lidar_object_detector_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" NAME_WE)
-add_dependencies(lidar_object_detector_generate_messages_eus _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_eus _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg" NAME_WE)
@@ -199,12 +178,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lidar_object_detector_generate_mess
 
 ### Section generating for lang: genlisp
 ### Generating Messages
-_generate_msg_lisp(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lidar_object_detector
-)
 _generate_msg_lisp(lidar_object_detector
   "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg"
   "${MSG_I_FLAGS}"
@@ -250,8 +223,6 @@ add_custom_target(lidar_object_detector_generate_messages_lisp
 add_dependencies(lidar_object_detector_generate_messages lidar_object_detector_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" NAME_WE)
-add_dependencies(lidar_object_detector_generate_messages_lisp _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_lisp _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg" NAME_WE)
@@ -272,12 +243,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lidar_object_detector_generate_mess
 
 ### Section generating for lang: gennodejs
 ### Generating Messages
-_generate_msg_nodejs(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lidar_object_detector
-)
 _generate_msg_nodejs(lidar_object_detector
   "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg"
   "${MSG_I_FLAGS}"
@@ -323,8 +288,6 @@ add_custom_target(lidar_object_detector_generate_messages_nodejs
 add_dependencies(lidar_object_detector_generate_messages lidar_object_detector_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" NAME_WE)
-add_dependencies(lidar_object_detector_generate_messages_nodejs _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_nodejs _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg" NAME_WE)
@@ -345,12 +308,6 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lidar_object_detector_generate_mess
 
 ### Section generating for lang: genpy
 ### Generating Messages
-_generate_msg_py(lidar_object_detector
-  "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lidar_object_detector
-)
 _generate_msg_py(lidar_object_detector
   "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg"
   "${MSG_I_FLAGS}"
@@ -396,8 +353,6 @@ add_custom_target(lidar_object_detector_generate_messages_py
 add_dependencies(lidar_object_detector_generate_messages lidar_object_detector_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg" NAME_WE)
-add_dependencies(lidar_object_detector_generate_messages_py _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg" NAME_WE)
 add_dependencies(lidar_object_detector_generate_messages_py _lidar_object_detector_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg" NAME_WE)

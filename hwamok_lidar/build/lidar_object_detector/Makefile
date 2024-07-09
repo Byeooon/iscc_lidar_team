@@ -228,21 +228,6 @@ lidar_object_detector_geneus/fast:
 .PHONY : lidar_object_detector_geneus/fast
 
 # Convenience name for target.
-lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/rule:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/rule
-.PHONY : lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/rule
-
-# Convenience name for target.
-_lidar_object_detector_generate_messages_check_deps_Waypoint: lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/rule
-
-.PHONY : _lidar_object_detector_generate_messages_check_deps_Waypoint
-
-# fast build rule for target.
-_lidar_object_detector_generate_messages_check_deps_Waypoint/fast:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/build.make lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir/build
-.PHONY : _lidar_object_detector_generate_messages_check_deps_Waypoint/fast
-
-# Convenience name for target.
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages.dir/rule:
 	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages.dir/rule
 .PHONY : lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages.dir/rule
@@ -1738,7 +1723,6 @@ help:
 	@echo "... lidar_object_detector_genpy"
 	@echo "... lidar_object_detector_generate_messages_lisp"
 	@echo "... lidar_object_detector_geneus"
-	@echo "... _lidar_object_detector_generate_messages_check_deps_Waypoint"
 	@echo "... lidar_object_detector_generate_messages"
 	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... install/local"

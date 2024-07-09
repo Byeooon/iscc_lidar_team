@@ -150,6 +150,8 @@ void cloud_cb(const sensor_msgs::PointCloud2ConstPtr& inputcloud) {
         float center_y = (minPoint.y + maxPoint.y)/2; //직육면체 중심 y 좌표
         float center_z = (minPoint.z + maxPoint.z)/2; //직육면체 중심 z 좌표 
 
+        cout << center_x <<  ' '  << center_y << ' ' <<center_z << "!!!!!" << endl;
+
         ObjectInfoMsg.lengthX[cluster_id] = x_len;
         ObjectInfoMsg.lengthY[cluster_id] = y_len;
         ObjectInfoMsg.lengthZ[cluster_id] = z_len;

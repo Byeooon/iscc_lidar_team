@@ -24,7 +24,6 @@ find_package(PCL 1.10 REQUIRED)
 ## 메시지 파일 추가
 add_message_files(
   FILES
-  ObjectInfo.msg
   Waypoint.msg
 )
 

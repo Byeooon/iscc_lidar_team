@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg;/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
+messages_str = "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
 services_str = ""
 pkg_name = "waypoint_maker"
 dependencies_str = "std_msgs"

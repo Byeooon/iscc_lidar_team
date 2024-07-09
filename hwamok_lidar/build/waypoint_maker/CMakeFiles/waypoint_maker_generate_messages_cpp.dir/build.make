@@ -53,24 +53,16 @@ CMAKE_BINARY_DIR = /home/foscar/hwamok_lidar/build
 # Include the progress variables for this target.
 include waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_cpp.dir/progress.make
 
-waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h
 
-
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h: /home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg
-/home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from waypoint_maker/ObjectInfo.msg"
-	cd /home/foscar/hwamok_lidar/src/waypoint_maker && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg -Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p waypoint_maker -o /home/foscar/hwamok_lidar/devel/include/waypoint_maker -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h: /home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg
 /home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from waypoint_maker/Waypoint.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from waypoint_maker/Waypoint.msg"
 	cd /home/foscar/hwamok_lidar/src/waypoint_maker && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg -Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p waypoint_maker -o /home/foscar/hwamok_lidar/devel/include/waypoint_maker -e /opt/ros/noetic/share/gencpp/cmake/..
 
 waypoint_maker_generate_messages_cpp: waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_cpp
-waypoint_maker_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h
 waypoint_maker_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h
 waypoint_maker_generate_messages_cpp: waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_cpp.dir/build.make
 

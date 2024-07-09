@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DriveValues.lisp"
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DynamicVelocity.lisp"
   "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/ObjectInfo.lisp"
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Waypoint.lisp"
   "CMakeFiles/lidar_object_detector_generate_messages_lisp"
 )
 

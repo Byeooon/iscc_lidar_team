@@ -53,22 +53,15 @@ CMAKE_BINARY_DIR = /home/foscar/hwamok_lidar/build
 # Include the progress variables for this target.
 include waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs.dir/progress.make
 
-waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs: /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/ObjectInfo.js
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs: /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/Waypoint.js
 
 
-/home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/ObjectInfo.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/ObjectInfo.js: /home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from waypoint_maker/ObjectInfo.msg"
-	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg -Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p waypoint_maker -o /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg
-
 /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/Waypoint.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/Waypoint.js: /home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from waypoint_maker/Waypoint.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from waypoint_maker/Waypoint.msg"
 	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg -Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p waypoint_maker -o /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg
 
 waypoint_maker_generate_messages_nodejs: waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs
-waypoint_maker_generate_messages_nodejs: /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/ObjectInfo.js
 waypoint_maker_generate_messages_nodejs: /home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/Waypoint.js
 waypoint_maker_generate_messages_nodejs: waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs.dir/build.make
 

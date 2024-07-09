@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "/home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/manifest.l"
-  "/home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/ObjectInfo.l"
   "/home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/Waypoint.l"
   "CMakeFiles/waypoint_maker_generate_messages_eus"
 )

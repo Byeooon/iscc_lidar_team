@@ -76,7 +76,6 @@
 /home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/lidar_object_detector_genpy.dir
 /home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_lisp.dir
 /home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/lidar_object_detector_geneus.dir
-/home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/_lidar_object_detector_generate_messages_check_deps_Waypoint.dir
 /home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages.dir
 /home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 /home/foscar/hwamok_lidar/build/lidar_object_detector/CMakeFiles/install/local.dir
@@ -362,10 +361,7 @@
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/rebuild_cache.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/edit_cache.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker.dir
-/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/test.dir
-/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir
-/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_genpy.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/list_install_components.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_cpp.dir
@@ -378,5 +374,7 @@
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/install/local.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_Waypoint.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_genlisp.dir
-/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir
+/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/test.dir
+/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir
 /home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs.dir
+/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir

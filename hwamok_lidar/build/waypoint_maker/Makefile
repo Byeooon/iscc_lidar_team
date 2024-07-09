@@ -90,17 +90,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"main\""
@@ -134,6 +123,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -183,21 +183,6 @@ waypoint_maker/fast:
 .PHONY : waypoint_maker/fast
 
 # Convenience name for target.
-waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
-.PHONY : waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
-
-# Convenience name for target.
-waypoint_maker_gencfg: waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
-
-.PHONY : waypoint_maker_gencfg
-
-# fast build rule for target.
-waypoint_maker_gencfg/fast:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build
-.PHONY : waypoint_maker_gencfg/fast
-
-# Convenience name for target.
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/rule:
 	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/rule
 .PHONY : waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/rule
@@ -211,21 +196,6 @@ waypoint_maker_generate_messages: waypoint_maker/CMakeFiles/waypoint_maker_gener
 waypoint_maker_generate_messages/fast:
 	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_generate_messages.dir/build
 .PHONY : waypoint_maker_generate_messages/fast
-
-# Convenience name for target.
-waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir/rule:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir/rule
-.PHONY : waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir/rule
-
-# Convenience name for target.
-_waypoint_maker_generate_messages_check_deps_ObjectInfo: waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir/rule
-
-.PHONY : _waypoint_maker_generate_messages_check_deps_ObjectInfo
-
-# fast build rule for target.
-_waypoint_maker_generate_messages_check_deps_ObjectInfo/fast:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir/build.make waypoint_maker/CMakeFiles/_waypoint_maker_generate_messages_check_deps_ObjectInfo.dir/build
-.PHONY : _waypoint_maker_generate_messages_check_deps_ObjectInfo/fast
 
 # Convenience name for target.
 waypoint_maker/CMakeFiles/waypoint_maker_genpy.dir/rule:
@@ -363,19 +333,19 @@ waypoint_maker_genlisp/fast:
 .PHONY : waypoint_maker_genlisp/fast
 
 # Convenience name for target.
-waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule
-.PHONY : waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule
+waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule:
+	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
+.PHONY : waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
 
 # Convenience name for target.
-waypoint_maker_gennodejs: waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule
+waypoint_maker_gencfg: waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/rule
 
-.PHONY : waypoint_maker_gennodejs
+.PHONY : waypoint_maker_gencfg
 
 # fast build rule for target.
-waypoint_maker_gennodejs/fast:
-	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/build
-.PHONY : waypoint_maker_gennodejs/fast
+waypoint_maker_gencfg/fast:
+	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_gencfg.dir/build
+.PHONY : waypoint_maker_gencfg/fast
 
 # Convenience name for target.
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs.dir/rule:
@@ -391,6 +361,21 @@ waypoint_maker_generate_messages_nodejs: waypoint_maker/CMakeFiles/waypoint_make
 waypoint_maker_generate_messages_nodejs/fast:
 	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_nodejs.dir/build
 .PHONY : waypoint_maker_generate_messages_nodejs/fast
+
+# Convenience name for target.
+waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule:
+	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule
+.PHONY : waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule
+
+# Convenience name for target.
+waypoint_maker_gennodejs: waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/rule
+
+.PHONY : waypoint_maker_gennodejs
+
+# fast build rule for target.
+waypoint_maker_gennodejs/fast:
+	cd /home/foscar/hwamok_lidar/build && $(MAKE) -f waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/build.make waypoint_maker/CMakeFiles/waypoint_maker_gennodejs.dir/build
+.PHONY : waypoint_maker_gennodejs/fast
 
 src/waypoint_maker.o: src/waypoint_maker.cpp.o
 
@@ -429,10 +414,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... waypoint_maker"
-	@echo "... test"
-	@echo "... waypoint_maker_gencfg"
 	@echo "... waypoint_maker_generate_messages"
-	@echo "... _waypoint_maker_generate_messages_check_deps_ObjectInfo"
 	@echo "... waypoint_maker_genpy"
 	@echo "... list_install_components"
 	@echo "... waypoint_maker_generate_messages_cpp"
@@ -445,8 +427,10 @@ help:
 	@echo "... install/local"
 	@echo "... _waypoint_maker_generate_messages_check_deps_Waypoint"
 	@echo "... waypoint_maker_genlisp"
-	@echo "... waypoint_maker_gennodejs"
+	@echo "... test"
+	@echo "... waypoint_maker_gencfg"
 	@echo "... waypoint_maker_generate_messages_nodejs"
+	@echo "... waypoint_maker_gennodejs"
 	@echo "... src/waypoint_maker.o"
 	@echo "... src/waypoint_maker.i"
 	@echo "... src/waypoint_maker.s"

@@ -39,7 +39,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lidar_object_detector/msg" TYPE FILE FILES
-    "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg"
     "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg"
     "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg"
     "/home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg"

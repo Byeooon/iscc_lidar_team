@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
+export PATH='/opt/ros/noetic/bin:/usr/bin:/usr/local/cuda-11.1/bin:/home/foscar/anaconda3/condabin:/home/foscar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PWD='/home/foscar/hwamok_lidar/build'

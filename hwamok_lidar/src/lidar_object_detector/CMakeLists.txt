@@ -18,7 +18,6 @@ find_package(PCL 1.8 REQUIRED)
 
 add_message_files(
     FILES
-    Waypoint.msg
     Boundingbox.msg
     DriveValues.msg
     Delivery.msg

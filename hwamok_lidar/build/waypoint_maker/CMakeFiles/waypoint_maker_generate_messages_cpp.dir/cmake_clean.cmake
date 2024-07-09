@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/include/waypoint_maker/ObjectInfo.h"
   "/home/foscar/hwamok_lidar/devel/include/waypoint_maker/Waypoint.h"
   "CMakeFiles/waypoint_maker_generate_messages_cpp"
 )

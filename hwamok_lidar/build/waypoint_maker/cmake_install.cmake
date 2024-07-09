@@ -38,10 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/msg" TYPE FILE FILES
-    "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg"
-    "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/msg" TYPE FILE FILES "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

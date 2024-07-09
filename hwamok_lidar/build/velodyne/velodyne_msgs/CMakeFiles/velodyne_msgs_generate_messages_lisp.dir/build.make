@@ -64,8 +64,8 @@ velodyne/velodyne_msgs/CMakeFiles/velodyne_msgs_generate_messages_lisp: /home/fo
 
 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/velodyne_msgs/msg/VelodyneScan.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/velodyne_msgs/msg/VelodyneScan.lisp: /home/foscar/hwamok_lidar/src/velodyne/velodyne_msgs/msg/VelodyneScan.msg
-/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/velodyne_msgs/msg/VelodyneScan.lisp: /home/foscar/hwamok_lidar/src/velodyne/velodyne_msgs/msg/VelodynePacket.msg
 /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/velodyne_msgs/msg/VelodyneScan.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/velodyne_msgs/msg/VelodyneScan.lisp: /home/foscar/hwamok_lidar/src/velodyne/velodyne_msgs/msg/VelodynePacket.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from velodyne_msgs/VelodyneScan.msg"
 	cd /home/foscar/hwamok_lidar/build/velodyne/velodyne_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/foscar/hwamok_lidar/src/velodyne/velodyne_msgs/msg/VelodyneScan.msg -Ivelodyne_msgs:/home/foscar/hwamok_lidar/src/velodyne/velodyne_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p velodyne_msgs -o /home/foscar/hwamok_lidar/devel/share/common-lisp/ros/velodyne_msgs/msg
 

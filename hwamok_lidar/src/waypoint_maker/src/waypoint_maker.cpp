@@ -174,7 +174,7 @@ class WaypointMaker{
         rightPivot.centerZ = 0.0;
 
         // subscribe
-        mainSub = nh.subscribe("/waypoint_maker", 1, &WaypointMaker::mainCallback, this);
+        mainSub = nh.subscribe("/traffic_cone", 1, &WaypointMaker::mainCallback, this);
 
         visualizeConePub = nh.advertise<visualization_msgs::MarkerArray>("/cone_marker", 0.001);
         waypointInfoPub = nh.advertise<waypoint_maker::Waypoint>("/waypoint_info", 0.001);
@@ -183,8 +183,8 @@ class WaypointMaker{
     }
 
     // method
-    void mainCallback(const waypoint_maker::ObjectInfo& msg); // 이 객체의 전체 로직을 수행하는 함수입니다.
-    void setObjectInfo(const waypoint_maker::ObjectInfo& msg); // object_info 정보를 받아 값을 objects에 저장하고 X값 기준 오름차순으로 정렬합니다.
+    void mainCallback(const lidar_object_detector::Trafficcone& msg); // 이 객체의 전체 로직을 수행하는 함수입니다.
+    void setObjectInfo(const lidar_object_detector::Trafficcone& msg); // object_info 정보를 받아 값을 objects에 저장하고 X값 기준 오름차순으로 정렬합니다.
     void setLeftRightConeInfo(); // 핵심 함수입니다. 자세한건 함수에 적어놨습니다.
     void setWaypointInfo(); // leftCone과 rightCone 정보를 이용하여 Waypoint를 계산하고 토픽을 발행합니다.
 
@@ -197,7 +197,7 @@ class WaypointMaker{
     // void cfgCallback(waypoint_maker::waypointMakerConfig &config, int32_t level);
 };
 
-void WaypointMaker::mainCallback(const waypoint_maker::ObjectInfo& msg) {
+void WaypointMaker::mainCallback(const lidar_object_detector::Trafficcone& msg) {
     setObjectInfo(msg);
     setLeftRightConeInfo();
     setWaypointInfo();
@@ -208,7 +208,7 @@ void WaypointMaker::mainCallback(const waypoint_maker::ObjectInfo& msg) {
     // visualizePivot();
 }
 
-void WaypointMaker::setObjectInfo(const waypoint_maker::ObjectInfo& msg) {
+void WaypointMaker::setObjectInfo(const lidar_object_detector::Trafficcone& msg) {
     /**
      * @brief 
      * object_detector가 발행하는 /object_info 토픽 메시지를 받아
@@ -391,7 +391,6 @@ void WaypointMaker::visualizeLeftRightCone() {
 
         coneObjectArray.markers.emplace_back(coneObject);
     }
-    cout << "!!!!!!!!!!!!!!!!1" << endl;
     visualizeConePub.publish(coneObjectArray);
 }
 
@@ -482,6 +481,7 @@ void cfgCallback(waypoint_maker::waypointMakerConfig &config, WaypointMaker* wm)
 }
 
 int main(int argc, char **argv) {
+    cout << "!!!!!!!!!!!!!!!!1" << endl;
     ros::init(argc, argv, "waypoint_maker");
 
     WaypointMaker waypointMaker;

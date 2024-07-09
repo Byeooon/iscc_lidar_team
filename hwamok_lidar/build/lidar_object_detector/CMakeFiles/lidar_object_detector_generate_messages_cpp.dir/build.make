@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /home/foscar/hwamok_lidar/build
 # Include the progress variables for this target.
 include lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp.dir/progress.make
 
-lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Waypoint.h
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h
@@ -61,44 +60,37 @@ lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp: /h
 lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h
 
 
-/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Waypoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Waypoint.h: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg
-/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Waypoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from lidar_object_detector/Waypoint.msg"
-	cd /home/foscar/hwamok_lidar/src/lidar_object_detector && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Waypoint.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/include/lidar_object_detector -e /opt/ros/noetic/share/gencpp/cmake/..
-
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from lidar_object_detector/Boundingbox.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from lidar_object_detector/Boundingbox.msg"
 	cd /home/foscar/hwamok_lidar/src/lidar_object_detector && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/include/lidar_object_detector -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from lidar_object_detector/DriveValues.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from lidar_object_detector/DriveValues.msg"
 	cd /home/foscar/hwamok_lidar/src/lidar_object_detector && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/include/lidar_object_detector -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from lidar_object_detector/Delivery.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from lidar_object_detector/Delivery.msg"
 	cd /home/foscar/hwamok_lidar/src/lidar_object_detector && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/include/lidar_object_detector -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DynamicVelocity.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DynamicVelocity.h: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DynamicVelocity.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from lidar_object_detector/DynamicVelocity.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from lidar_object_detector/DynamicVelocity.msg"
 	cd /home/foscar/hwamok_lidar/src/lidar_object_detector && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/include/lidar_object_detector -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h: /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg
 /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from lidar_object_detector/ObjectInfo.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from lidar_object_detector/ObjectInfo.msg"
 	cd /home/foscar/hwamok_lidar/src/lidar_object_detector && /home/foscar/hwamok_lidar/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/foscar/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg -Ilidar_object_detector:/home/foscar/hwamok_lidar/src/lidar_object_detector/msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p lidar_object_detector -o /home/foscar/hwamok_lidar/devel/include/lidar_object_detector -e /opt/ros/noetic/share/gencpp/cmake/..
 
 lidar_object_detector_generate_messages_cpp: lidar_object_detector/CMakeFiles/lidar_object_detector_generate_messages_cpp
-lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Waypoint.h
 lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h
 lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h
 lidar_object_detector_generate_messages_cpp: /home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h

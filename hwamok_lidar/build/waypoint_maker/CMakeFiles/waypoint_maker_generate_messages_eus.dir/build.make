@@ -53,27 +53,20 @@ CMAKE_BINARY_DIR = /home/foscar/hwamok_lidar/build
 # Include the progress variables for this target.
 include waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_eus.dir/progress.make
 
-waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/ObjectInfo.l
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/Waypoint.l
 waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/manifest.l
 
 
-/home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/ObjectInfo.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/ObjectInfo.l: /home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from waypoint_maker/ObjectInfo.msg"
-	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/foscar/hwamok_lidar/src/waypoint_maker/msg/ObjectInfo.msg -Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p waypoint_maker -o /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg
-
 /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/Waypoint.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/Waypoint.l: /home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from waypoint_maker/Waypoint.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from waypoint_maker/Waypoint.msg"
 	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg -Iwaypoint_maker:/home/foscar/hwamok_lidar/src/waypoint_maker/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p waypoint_maker -o /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg
 
 /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for waypoint_maker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/foscar/hwamok_lidar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for waypoint_maker"
 	cd /home/foscar/hwamok_lidar/build/waypoint_maker && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker waypoint_maker std_msgs
 
 waypoint_maker_generate_messages_eus: waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_eus
-waypoint_maker_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/ObjectInfo.l
 waypoint_maker_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/msg/Waypoint.l
 waypoint_maker_generate_messages_eus: /home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker/manifest.l
 waypoint_maker_generate_messages_eus: waypoint_maker/CMakeFiles/waypoint_maker_generate_messages_eus.dir/build.make
