@@ -9,7 +9,7 @@ import rospkg
 import tf
 from visualization_msgs.msg import Marker
 from visualization_msgs.msg import MarkerArray
-from waypoint_maker import Waypoint
+from waypoint_maker.msg import Waypoint
 
 linspace_num = 200
 
@@ -18,9 +18,9 @@ class drawing_path():
         global linspace_num
 
         rospy.init_node('linspace')
-        pub1 = rospy.Publisher('waypoint_linspace', MarkerArray, queue_size = 1)
-        pub2 = rospy.Publisher('local_path', Waypoint, queue_size = 1)
-        rospy.Subscriber('/waypoint_position', Waypoint, self.callback)
+        pub1 = rospy.Publisher('/waypoint_maker', MarkerArray, queue_size = 1)
+        pub2 = rospy.Publisher('/local_path', Waypoint, queue_size = 1)
+        rospy.Subscriber('/waypoint_info', Waypoint, self.callback)
         self.x_array = []
         self.y_array = []
         array = [[] for _ in range(linspace_num)]
@@ -30,6 +30,8 @@ class drawing_path():
         while not rospy.is_shutdown():
             
             local_path = Waypoint()
+            local_path.x_arr = [0.0] * linspace_num
+            local_path.y_arr = [0.0] * linspace_num
 
             if len(self.x_array) > 1 and len(self.y_array) > 1:
 
@@ -56,13 +58,13 @@ class drawing_path():
 
                 for i in range(linspace_num):
                     marker = Marker()
-                    marker.header.frame_id = "/velodyne"
+                    marker.header.frame_id = "velodyne" # no slash!!!!!
                     marker.id = i
-                    marker.type = marker.SPHERE
+                    marker.type = marker.CUBE
                     marker.action = marker.ADD
-                    marker.scale.x = 0.05
-                    marker.scale.y = 0.05
-                    marker.scale.z = 0.05
+                    marker.scale.x = 0.1
+                    marker.scale.y = 0.1
+                    marker.scale.z = 0.1
                     marker.color.a = 1.0
                     marker.color.r = 0.0
                     marker.color.g = 1.0
@@ -72,14 +74,14 @@ class drawing_path():
                     marker.pose.position.y = array[i][1]
                     marker.pose.position.z = 0.2
 
-                    marker.lifetime = rospy.Duration(0.1)
+                    marker.lifetime = rospy.Duration(1.0)
 
                     waypoint_marker_arr.markers.append(marker)
                 
                     local_path.x_arr[i] = array[i][0]
                     local_path.y_arr[i] = array[i][1]
 
-                local_path.tangent = abs(z[0])
+                # local_path.tangent = abs(z[0])
 
                 pub1.publish(waypoint_marker_arr)
                 pub2.publish(local_path)
@@ -91,7 +93,8 @@ class drawing_path():
         self.x_array = list(msg.x_arr)[0:msg.cnt]
         self.y_array = list(msg.y_arr)[0:msg.cnt]
         self.cnt = msg.cnt
-        self.x_array.insert(0, -0.92)
+        self.x_array.insert(0, -0.95)
+        # self.x_array.insert(0, 0)
         self.y_array.insert(0, 0)
 
 
