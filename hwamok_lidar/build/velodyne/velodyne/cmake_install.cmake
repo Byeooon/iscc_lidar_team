@@ -1,8 +1,8 @@
-# Install script for directory: /home/foscar/hwamok_lidar/src/velodyne/velodyne
+# Install script for directory: /home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/foscar/hwamok_lidar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/foscar/iscc_lidar_team/hwamok_lidar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/foscar/hwamok_lidar/src/velodyne/velodyne/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne/package.xml")
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/foscar/hwamok_lidar/src/waypoint_maker
+# Install script for directory: /home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/foscar/hwamok_lidar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/foscar/iscc_lidar_team/hwamok_lidar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,69 +38,69 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/msg" TYPE FILE FILES "/home/foscar/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/msg" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker/msg/Waypoint.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/cmake" TYPE FILE FILES "/home/foscar/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_maker-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/cmake" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_maker-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/include/waypoint_maker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/waypoint_maker")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/share/roseus/ros/waypoint_maker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/roseus/ros/waypoint_maker")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/waypoint_maker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp/ros/waypoint_maker")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/waypoint_maker" TYPE FILE FILES "/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/waypoint_maker" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/waypoint_maker" TYPE FILE FILES "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/waypoint_maker" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/waypoint_maker" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/waypoint_maker" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/foscar/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_maker.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_maker.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/cmake" TYPE FILE FILES "/home/foscar/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_maker-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/cmake" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_maker-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker/cmake" TYPE FILE FILES
-    "/home/foscar/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig.cmake"
-    "/home/foscar/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig-version.cmake"
+    "/home/foscar/iscc_lidar_team/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig.cmake"
+    "/home/foscar/iscc_lidar_team/hwamok_lidar/build/waypoint_maker/catkin_generated/installspace/waypoint_makerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker" TYPE FILE FILES "/home/foscar/hwamok_lidar/src/waypoint_maker/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_maker" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker/package.xml")
 endif()
 

@@ -1,4 +1,4 @@
-prefix=/home/foscar/hwamok_lidar/install
+prefix=/home/foscar/iscc_lidar_team/hwamok_lidar/install
 
 Name: lidar_object_detector
 Description: Description of lidar_object_detector

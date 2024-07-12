@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/lidar_object_detector/traffic_cone"
-  "/home/foscar/hwamok_lidar/devel/lib/lidar_object_detector/traffic_cone.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/lidar_object_detector/traffic_cone"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/lidar_object_detector/traffic_cone.pdb"
   "CMakeFiles/traffic_cone.dir/src/traffic_cone.cpp.o"
 )
 

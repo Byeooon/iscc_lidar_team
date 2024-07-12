@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_pointcloud/transform_node"
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_pointcloud/transform_node.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_pointcloud/transform_node"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_pointcloud/transform_node.pdb"
   "CMakeFiles/transform_node.dir/transform.cc.o"
   "CMakeFiles/transform_node.dir/transform_node.cc.o"
 )

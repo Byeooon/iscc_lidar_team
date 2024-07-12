@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_driver/time_test"
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_driver/time_test.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_driver/time_test"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_driver/time_test.pdb"
   "CMakeFiles/time_test.dir/tests/timeconversiontest.cpp.o"
 )
 

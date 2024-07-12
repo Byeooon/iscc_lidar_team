@@ -341,13 +341,14 @@ void WaypointMaker::setWaypointInfo() {
                     waypointInfoMsg.y_arr[i] = (leftPivot.centerY + rightCones.cone[i]->centerY) / 2;
                 }
             }
-        }
     }
-
     waypointInfoPub.publish(waypointInfoMsg);
+    this->visualizeLeftRightCone();
 }
 
 void WaypointMaker::visualizeLeftRightCone() {
+    // ROS_INFO("hihihi");
+
     visualization_msgs::Marker coneObject;
     visualization_msgs::MarkerArray coneObjectArray;
 
@@ -367,9 +368,9 @@ void WaypointMaker::visualizeLeftRightCone() {
 
     coneObject.lifetime = ros::Duration(0.1);
 
+    cout << leftCones.size << endl;
     for (int i = 0; i < leftCones.size; i++) {
         coneObject.id = 100 + i;
-
         coneObject.pose.position.x = leftCones.cone[i]->centerX;
         coneObject.pose.position.y = leftCones.cone[i]->centerY;
         coneObject.pose.position.z = leftCones.cone[i]->centerZ;
@@ -384,6 +385,7 @@ void WaypointMaker::visualizeLeftRightCone() {
 
     for (int i = 0; i < rightCones.size; i++) {
         coneObject.id = 200 + i; 
+        cout << "right" << endl;
 
         coneObject.pose.position.x = rightCones.cone[i]->centerX;
         coneObject.pose.position.y = rightCones.cone[i]->centerY;
@@ -481,7 +483,7 @@ void cfgCallback(waypoint_maker::waypointMakerConfig &config, WaypointMaker* wm)
 }
 
 int main(int argc, char **argv) {
-    cout << "!!!!!!!!!!!!!!!!1" << endl;
+    // cout << "!!!!!!!!!!!!!!!!1" << endl;
     ros::init(argc, argv, "waypoint_maker");
 
     WaypointMaker waypointMaker;
@@ -493,5 +495,8 @@ int main(int argc, char **argv) {
     
     ros::spin();
 
+    // while(ros::ok()){
+    //     waypointMaker.visualizeLeftRightCone();
+    // }
     return 0;
 }

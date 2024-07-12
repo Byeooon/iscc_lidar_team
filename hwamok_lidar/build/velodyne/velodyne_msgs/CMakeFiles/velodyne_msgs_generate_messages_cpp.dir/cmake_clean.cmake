@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/include/velodyne_msgs/VelodynePacket.h"
-  "/home/foscar/hwamok_lidar/devel/include/velodyne_msgs/VelodyneScan.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/velodyne_msgs/VelodynePacket.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/velodyne_msgs/VelodyneScan.h"
   "CMakeFiles/velodyne_msgs_generate_messages_cpp"
 )
 

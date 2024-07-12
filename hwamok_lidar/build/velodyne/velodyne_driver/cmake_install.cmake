@@ -1,8 +1,8 @@
-# Install script for directory: /home/foscar/hwamok_lidar/src/velodyne/velodyne_driver
+# Install script for directory: /home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/foscar/hwamok_lidar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/foscar/iscc_lidar_team/hwamok_lidar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,56 +38,56 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_driver" TYPE FILE FILES "/home/foscar/hwamok_lidar/devel/include/velodyne_driver/VelodyneNodeConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_driver" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/velodyne_driver/VelodyneNodeConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/velodyne_driver" TYPE FILE FILES "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_driver/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/velodyne_driver" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_driver/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_driver/cfg")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_driver/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/velodyne_driver" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_driver/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/velodyne_driver" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_driver/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/foscar/hwamok_lidar/build/velodyne/velodyne_driver/catkin_generated/installspace/velodyne_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/build/velodyne/velodyne_driver/catkin_generated/installspace/velodyne_driver.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver/cmake" TYPE FILE FILES
-    "/home/foscar/hwamok_lidar/build/velodyne/velodyne_driver/catkin_generated/installspace/velodyne_driverConfig.cmake"
-    "/home/foscar/hwamok_lidar/build/velodyne/velodyne_driver/catkin_generated/installspace/velodyne_driverConfig-version.cmake"
+    "/home/foscar/iscc_lidar_team/hwamok_lidar/build/velodyne/velodyne_driver/catkin_generated/installspace/velodyne_driverConfig.cmake"
+    "/home/foscar/iscc_lidar_team/hwamok_lidar/build/velodyne/velodyne_driver/catkin_generated/installspace/velodyne_driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE FILE FILES "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_driver" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/include/velodyne_driver/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/velodyne_driver" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/include/velodyne_driver/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE FILE FILES "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/nodelet_velodyne.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver" TYPE FILE FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/nodelet_velodyne.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver/launch" TYPE DIRECTORY FILES "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_driver/launch" TYPE DIRECTORY FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver" TYPE PROGRAM FILES "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/src/vdump")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/velodyne_driver" TYPE PROGRAM FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/src/vdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/foscar/hwamok_lidar/build/velodyne/velodyne_driver/src/lib/cmake_install.cmake")
-  include("/home/foscar/hwamok_lidar/build/velodyne/velodyne_driver/src/driver/cmake_install.cmake")
+  include("/home/foscar/iscc_lidar_team/hwamok_lidar/build/velodyne/velodyne_driver/src/lib/cmake_install.cmake")
+  include("/home/foscar/iscc_lidar_team/hwamok_lidar/build/velodyne/velodyne_driver/src/driver/cmake_install.cmake")
 
 endif()
 

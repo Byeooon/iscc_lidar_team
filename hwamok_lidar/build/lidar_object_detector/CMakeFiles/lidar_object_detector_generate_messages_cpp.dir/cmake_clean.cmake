@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h"
-  "/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h"
-  "/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h"
-  "/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/DynamicVelocity.h"
-  "/home/foscar/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/lidar_object_detector/Boundingbox.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/lidar_object_detector/Delivery.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/lidar_object_detector/DriveValues.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/lidar_object_detector/DynamicVelocity.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/lidar_object_detector/ObjectInfo.h"
   "CMakeFiles/lidar_object_detector_generate_messages_cpp"
 )
 

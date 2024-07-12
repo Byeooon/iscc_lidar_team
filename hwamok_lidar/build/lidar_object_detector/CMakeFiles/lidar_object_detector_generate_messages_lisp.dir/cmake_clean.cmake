@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Boundingbox.lisp"
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Delivery.lisp"
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DriveValues.lisp"
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DynamicVelocity.lisp"
-  "/home/foscar/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/ObjectInfo.lisp"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Boundingbox.lisp"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/Delivery.lisp"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DriveValues.lisp"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/DynamicVelocity.lisp"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp/ros/lidar_object_detector/msg/ObjectInfo.lisp"
   "CMakeFiles/lidar_object_detector_generate_messages_lisp"
 )
 

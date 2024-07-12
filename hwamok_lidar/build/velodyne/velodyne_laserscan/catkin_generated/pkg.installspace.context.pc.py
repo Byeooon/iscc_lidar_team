@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "sensor_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "velodyne_laserscan"
-PROJECT_SPACE_DIR = "/home/foscar/hwamok_lidar/install"
+PROJECT_SPACE_DIR = "/home/foscar/iscc_lidar_team/hwamok_lidar/install"
 PROJECT_VERSION = "1.7.0"

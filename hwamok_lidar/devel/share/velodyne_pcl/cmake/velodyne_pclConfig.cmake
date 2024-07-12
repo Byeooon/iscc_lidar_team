@@ -67,14 +67,14 @@ set(velodyne_pcl_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(velodyne_pcl_SOURCE_PREFIX /home/foscar/hwamok_lidar/src/velodyne/velodyne_pcl)
-  set(velodyne_pcl_DEVEL_PREFIX /home/foscar/hwamok_lidar/devel)
+  set(velodyne_pcl_SOURCE_PREFIX /home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_pcl)
+  set(velodyne_pcl_DEVEL_PREFIX /home/foscar/iscc_lidar_team/hwamok_lidar/devel)
   set(velodyne_pcl_INSTALL_PREFIX "")
   set(velodyne_pcl_PREFIX ${velodyne_pcl_DEVEL_PREFIX})
 else()
   set(velodyne_pcl_SOURCE_PREFIX "")
   set(velodyne_pcl_DEVEL_PREFIX "")
-  set(velodyne_pcl_INSTALL_PREFIX /home/foscar/hwamok_lidar/install)
+  set(velodyne_pcl_INSTALL_PREFIX /home/foscar/iscc_lidar_team/hwamok_lidar/install)
   set(velodyne_pcl_PREFIX ${velodyne_pcl_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(velodyne_pcl_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/foscar/hwamok_lidar/src/velodyne/velodyne_pcl/include " STREQUAL " ")
+if(NOT "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_pcl/include " STREQUAL " ")
   set(velodyne_pcl_INCLUDE_DIRS "")
-  set(_include_dirs "/home/foscar/hwamok_lidar/src/velodyne/velodyne_pcl/include")
+  set(_include_dirs "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_pcl/include")
   if(NOT "https://github.com/ros-drivers/velodyne/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-drivers/velodyne/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/velodyne_pcl " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/foscar/hwamok_lidar/src/velodyne/velodyne_pcl/include " STREQUAL "
         message(FATAL_ERROR "Project 'velodyne_pcl' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'velodyne_pcl' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/foscar/hwamok_lidar/src/velodyne/velodyne_pcl/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'velodyne_pcl' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_pcl/${idir}'.  ${_report}")
     endif()
     _list_append_unique(velodyne_pcl_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/foscar/hwamok_lidar/devel/lib;/home/foscar/hwamok_lidar/devel/lib;/home/foscar/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib;/home/foscar/junho_ws/devel/lib;/home/foscar/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

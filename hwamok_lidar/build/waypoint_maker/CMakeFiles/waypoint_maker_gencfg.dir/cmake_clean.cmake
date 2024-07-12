@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h"
-  "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py"
-  "/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig-usage.dox"
-  "/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.dox"
-  "/home/foscar/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.wikidoc"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include/waypoint_maker/waypoint_makerConfig.h"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/waypoint_maker/cfg/waypoint_makerConfig.py"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig-usage.dox"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.dox"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/waypoint_maker/docs/waypoint_makerConfig.wikidoc"
   "CMakeFiles/waypoint_maker_gencfg"
 )
 

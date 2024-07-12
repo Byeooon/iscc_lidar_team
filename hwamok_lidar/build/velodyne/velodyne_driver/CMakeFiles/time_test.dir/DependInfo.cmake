@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/tests/timeconversiontest.cpp" "/home/foscar/hwamok_lidar/build/velodyne/velodyne_driver/CMakeFiles/time_test.dir/tests/timeconversiontest.cpp.o"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/tests/timeconversiontest.cpp" "/home/foscar/iscc_lidar_team/hwamok_lidar/build/velodyne/velodyne_driver/CMakeFiles/time_test.dir/tests/timeconversiontest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,8 +20,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/foscar/hwamok_lidar/devel/include"
-  "/home/foscar/hwamok_lidar/src/velodyne/velodyne_driver/include"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/include"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_driver/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/src/googletest/googletest/include"
@@ -30,7 +31,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/foscar/hwamok_lidar/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

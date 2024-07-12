@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_msgs/msg/_VelodynePacket.py"
-  "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_msgs/msg/_VelodyneScan.py"
-  "/home/foscar/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_msgs/msg/__init__.py"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_msgs/msg/_VelodynePacket.py"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_msgs/msg/_VelodyneScan.py"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages/velodyne_msgs/msg/__init__.py"
   "CMakeFiles/velodyne_msgs_generate_messages_py"
 )
 

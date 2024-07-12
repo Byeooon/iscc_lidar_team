@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/src/waypoint_maker.cpp" "/home/foscar/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker.dir/src/waypoint_maker.cpp.o"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker/src/waypoint_maker.cpp" "/home/foscar/iscc_lidar_team/hwamok_lidar/build/waypoint_maker/CMakeFiles/waypoint_maker.dir/src/waypoint_maker.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,11 +23,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/foscar/hwamok_lidar/devel/include"
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/include"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/include"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/include"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/foscar/hwamok_lidar/src/waypoint_maker/waypoint_maker"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker/waypoint_maker"
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
   "/usr/include/eigen3"

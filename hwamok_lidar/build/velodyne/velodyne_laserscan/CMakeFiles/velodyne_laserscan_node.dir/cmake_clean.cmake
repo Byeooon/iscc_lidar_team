@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_laserscan/velodyne_laserscan_node"
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_laserscan/velodyne_laserscan_node.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_laserscan/velodyne_laserscan_node"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_laserscan/velodyne_laserscan_node.pdb"
   "CMakeFiles/velodyne_laserscan_node.dir/src/node.cpp.o"
 )
 

@@ -67,14 +67,14 @@ set(waypoint_maker_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(waypoint_maker_SOURCE_PREFIX /home/foscar/hwamok_lidar/src/waypoint_maker)
-  set(waypoint_maker_DEVEL_PREFIX /home/foscar/hwamok_lidar/devel)
+  set(waypoint_maker_SOURCE_PREFIX /home/foscar/iscc_lidar_team/hwamok_lidar/src/waypoint_maker)
+  set(waypoint_maker_DEVEL_PREFIX /home/foscar/iscc_lidar_team/hwamok_lidar/devel)
   set(waypoint_maker_INSTALL_PREFIX "")
   set(waypoint_maker_PREFIX ${waypoint_maker_DEVEL_PREFIX})
 else()
   set(waypoint_maker_SOURCE_PREFIX "")
   set(waypoint_maker_DEVEL_PREFIX "")
-  set(waypoint_maker_INSTALL_PREFIX /home/foscar/hwamok_lidar/install)
+  set(waypoint_maker_INSTALL_PREFIX /home/foscar/iscc_lidar_team/hwamok_lidar/install)
   set(waypoint_maker_PREFIX ${waypoint_maker_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/foscar/hwamok_lidar/install/lib;/home/foscar/hwamok_lidar/devel/lib;/home/foscar/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/foscar/iscc_lidar_team/hwamok_lidar/install/lib;/home/foscar/junho_ws/devel/lib;/home/foscar/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

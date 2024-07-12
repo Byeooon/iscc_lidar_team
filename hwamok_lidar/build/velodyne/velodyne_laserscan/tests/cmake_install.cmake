@@ -1,8 +1,8 @@
-# Install script for directory: /home/foscar/hwamok_lidar/src/velodyne/velodyne_laserscan/tests
+# Install script for directory: /home/foscar/iscc_lidar_team/hwamok_lidar/src/velodyne/velodyne_laserscan/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/foscar/hwamok_lidar/install")
+  set(CMAKE_INSTALL_PREFIX "/home/foscar/iscc_lidar_team/hwamok_lidar/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

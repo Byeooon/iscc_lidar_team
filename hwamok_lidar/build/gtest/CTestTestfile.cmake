@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/googletest
-# Build directory: /home/foscar/hwamok_lidar/build/gtest
+# Build directory: /home/foscar/iscc_lidar_team/hwamok_lidar/build/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

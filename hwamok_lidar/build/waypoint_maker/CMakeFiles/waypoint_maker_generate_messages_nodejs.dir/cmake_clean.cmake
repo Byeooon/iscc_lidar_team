@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/Waypoint.js"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/gennodejs/ros/waypoint_maker/msg/Waypoint.js"
   "CMakeFiles/waypoint_maker_generate_messages_nodejs"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/libdata_containers.pdb"
-  "/home/foscar/hwamok_lidar/devel/lib/libdata_containers.so"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libdata_containers.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libdata_containers.so"
   "CMakeFiles/data_containers.dir/organized_cloudXYZIRT.cc.o"
   "CMakeFiles/data_containers.dir/pointcloudXYZIRT.cc.o"
 )

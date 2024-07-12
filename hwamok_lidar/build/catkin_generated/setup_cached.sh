@@ -7,5 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export PATH='/opt/ros/noetic/bin:/usr/bin:/usr/local/cuda-11.1/bin:/home/foscar/anaconda3/condabin:/home/foscar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
-export PWD='/home/foscar/hwamok_lidar/build'
+export CMAKE_PREFIX_PATH="/home/foscar/iscc_lidar_team/hwamok_lidar/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/foscar/iscc_lidar_team/hwamok_lidar/build'
+export PYTHONPATH="/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/foscar/hwamok_lidar/src:/home/foscar/iscc_lidar_team/hwamok_lidar/src:$ROS_PACKAGE_PATH"

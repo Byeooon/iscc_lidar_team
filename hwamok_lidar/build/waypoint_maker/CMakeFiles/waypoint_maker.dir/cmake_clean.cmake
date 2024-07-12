@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/waypoint_maker/waypoint_maker"
-  "/home/foscar/hwamok_lidar/devel/lib/waypoint_maker/waypoint_maker.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/waypoint_maker/waypoint_maker"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/waypoint_maker/waypoint_maker.pdb"
   "CMakeFiles/waypoint_maker.dir/src/waypoint_maker.cpp.o"
 )
 

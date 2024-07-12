@@ -84,7 +84,7 @@ class drawing_path():
                 # local_path.tangent = abs(z[0])
 
                 pub1.publish(waypoint_marker_arr)
-                pub2.publish(local_path)
+                # pub2.publish(local_path)
 
             rate.sleep()
 

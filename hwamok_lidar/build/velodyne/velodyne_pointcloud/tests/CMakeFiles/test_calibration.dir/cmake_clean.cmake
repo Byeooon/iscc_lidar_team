@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_pointcloud/test_calibration"
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_pointcloud/test_calibration.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_pointcloud/test_calibration"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_pointcloud/test_calibration.pdb"
   "CMakeFiles/test_calibration.dir/test_calibration.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/libvelodyne_input.pdb"
-  "/home/foscar/hwamok_lidar/devel/lib/libvelodyne_input.so"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libvelodyne_input.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libvelodyne_input.so"
   "CMakeFiles/velodyne_input.dir/input.cc.o"
 )
 

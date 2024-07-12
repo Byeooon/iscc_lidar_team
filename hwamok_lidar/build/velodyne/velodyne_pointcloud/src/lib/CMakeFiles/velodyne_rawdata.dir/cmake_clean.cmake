@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/libvelodyne_rawdata.pdb"
-  "/home/foscar/hwamok_lidar/devel/lib/libvelodyne_rawdata.so"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libvelodyne_rawdata.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libvelodyne_rawdata.so"
   "CMakeFiles/velodyne_rawdata.dir/calibration.cc.o"
   "CMakeFiles/velodyne_rawdata.dir/rawdata.cc.o"
 )

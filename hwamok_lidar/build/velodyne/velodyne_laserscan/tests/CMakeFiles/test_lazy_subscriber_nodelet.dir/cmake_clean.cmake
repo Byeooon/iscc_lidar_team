@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_laserscan/test_lazy_subscriber_nodelet"
-  "/home/foscar/hwamok_lidar/devel/lib/velodyne_laserscan/test_lazy_subscriber_nodelet.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_laserscan/test_lazy_subscriber_nodelet"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/velodyne_laserscan/test_lazy_subscriber_nodelet.pdb"
   "CMakeFiles/test_lazy_subscriber_nodelet.dir/lazy_subscriber.cpp.o"
 )
 

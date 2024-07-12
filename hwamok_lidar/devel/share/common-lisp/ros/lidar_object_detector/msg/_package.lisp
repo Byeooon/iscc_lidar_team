@@ -11,7 +11,5 @@
    "DYNAMICVELOCITY"
    "<OBJECTINFO>"
    "OBJECTINFO"
-   "<WAYPOINT>"
-   "WAYPOINT"
   ))
 

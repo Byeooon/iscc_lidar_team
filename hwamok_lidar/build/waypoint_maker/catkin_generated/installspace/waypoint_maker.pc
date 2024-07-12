@@ -1,4 +1,4 @@
-prefix=/home/foscar/hwamok_lidar/install
+prefix=/home/foscar/iscc_lidar_team/hwamok_lidar/install
 
 Name: waypoint_maker
 Description: Description of waypoint_maker

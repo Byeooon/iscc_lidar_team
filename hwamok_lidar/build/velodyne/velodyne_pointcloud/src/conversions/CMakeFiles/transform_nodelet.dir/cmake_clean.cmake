@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/libtransform_nodelet.pdb"
-  "/home/foscar/hwamok_lidar/devel/lib/libtransform_nodelet.so"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libtransform_nodelet.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libtransform_nodelet.so"
   "CMakeFiles/transform_nodelet.dir/transform.cc.o"
   "CMakeFiles/transform_nodelet.dir/transform_nodelet.cc.o"
 )

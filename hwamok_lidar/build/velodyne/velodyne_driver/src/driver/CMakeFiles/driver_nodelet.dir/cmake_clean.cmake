@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/lib/libdriver_nodelet.pdb"
-  "/home/foscar/hwamok_lidar/devel/lib/libdriver_nodelet.so"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libdriver_nodelet.pdb"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/libdriver_nodelet.so"
   "CMakeFiles/driver_nodelet.dir/driver.cc.o"
   "CMakeFiles/driver_nodelet.dir/nodelet.cc.o"
 )

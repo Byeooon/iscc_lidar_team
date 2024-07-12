@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/foscar/hwamok_lidar/devel/share/gennodejs/ros/velodyne_msgs/msg/VelodynePacket.js"
-  "/home/foscar/hwamok_lidar/devel/share/gennodejs/ros/velodyne_msgs/msg/VelodyneScan.js"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/gennodejs/ros/velodyne_msgs/msg/VelodynePacket.js"
+  "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/share/gennodejs/ros/velodyne_msgs/msg/VelodyneScan.js"
   "CMakeFiles/velodyne_msgs_generate_messages_nodejs"
 )
 
