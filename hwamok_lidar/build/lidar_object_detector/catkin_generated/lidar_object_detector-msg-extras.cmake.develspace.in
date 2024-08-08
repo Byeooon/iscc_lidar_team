@@ -1,2 +1,0 @@
-set(lidar_object_detector_MESSAGE_FILES "/home/foscar/iscc_lidar_team/hwamok_lidar/src/lidar_object_detector/msg/Boundingbox.msg;/home/foscar/iscc_lidar_team/hwamok_lidar/src/lidar_object_detector/msg/DriveValues.msg;/home/foscar/iscc_lidar_team/hwamok_lidar/src/lidar_object_detector/msg/Delivery.msg;/home/foscar/iscc_lidar_team/hwamok_lidar/src/lidar_object_detector/msg/DynamicVelocity.msg;/home/foscar/iscc_lidar_team/hwamok_lidar/src/lidar_object_detector/msg/ObjectInfo.msg")
-set(lidar_object_detector_SERVICE_FILES "")

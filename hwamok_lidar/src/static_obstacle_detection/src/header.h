@@ -9,11 +9,8 @@
 #include <time.h>
 #include <algorithm>
 #include <cmath>
-#include <cstdlib>
 
 #include <ros/ros.h>
-#include <dynamic_reconfigure/server.h>
-#include <boost/bind.hpp>
 
 #include <sensor_msgs/PointCloud2.h>
 
@@ -41,19 +38,12 @@
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
 
-#include <nav_msgs/Path.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Pose.h>
-#include <geometry_msgs/PoseArray.h>
-
 #include <std_msgs/Bool.h>
-#include <lidar_trafficcone_detection/Trafficcone.h> 
-// #include <lidar_team_morai/Boundingbox.h>
-#include <waypoint_maker/Waypoint.h>
-// #include <lidar_team_morai/DynamicVelocity.h>
-// #include <waypoint_maker/ObjectInfo.h>
+
+#include <static_obstacle_detection/Boundingbox.h>
+#include <static_obstacle_detection/ObstacleInfo.h>
 
 #include <dynamic_reconfigure/server.h>
-#include "waypoint_maker/waypointMakerConfig.h"
+#include <static_obstacle_detection/static_hyper_parameterConfig.h>
 
 #endif // HEADER_H

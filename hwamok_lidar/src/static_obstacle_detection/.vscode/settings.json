@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/foscar/iscc_2024/src/gps/erp_drive/src"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/foscar/iscc_lidar_team/hwamok_lidar/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/foscar/iscc_2024/src/gps/erp_drive/src"
+    ]
+}

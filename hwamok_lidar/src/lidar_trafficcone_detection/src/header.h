@@ -9,11 +9,8 @@
 #include <time.h>
 #include <algorithm>
 #include <cmath>
-#include <cstdlib>
 
 #include <ros/ros.h>
-#include <dynamic_reconfigure/server.h>
-#include <boost/bind.hpp>
 
 #include <sensor_msgs/PointCloud2.h>
 
@@ -38,22 +35,26 @@
 #include <pcl/filters/passthrough.h>
 #include <pcl/segmentation/progressive_morphological_filter.h>
 
-#include <visualization_msgs/Marker.h>
-#include <visualization_msgs/MarkerArray.h>
-
-#include <nav_msgs/Path.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Pose.h>
-#include <geometry_msgs/PoseArray.h>
-
 #include <std_msgs/Bool.h>
-#include <lidar_trafficcone_detection/Trafficcone.h> 
-// #include <lidar_team_morai/Boundingbox.h>
-#include <waypoint_maker/Waypoint.h>
-// #include <lidar_team_morai/DynamicVelocity.h>
-// #include <waypoint_maker/ObjectInfo.h>
+
+#include <lidar_trafficcone_detection/Boundingbox.h>
+// #include "lidar_object_detector/Waypoint.h"
+// #include "lidar_object_detector/Delivery.h"
+// #include "lidar_object_detector/DynamicVelocity.h"
+//#include "lidar_object_detector/PurePursuit.h"
 
 #include <dynamic_reconfigure/server.h>
-#include "waypoint_maker/waypointMakerConfig.h"
+#include <lidar_trafficcone_detection/traffic_hyper_parameterConfig.h>
+
+// #include "lidar_object_detector/dy_hyper_parameterConfig.h"
+// #include "lidar_object_detector/small_st_hyper_parameterConfig.h"
+// #include "lidar_object_detector/large_st_hyper_parameterConfig.h"
+// #include "lidar_object_detector/de_hyper_parameterConfig.h"
+// #include "lidar_object_detector/pk_hyper_parameterConfig.h"
+// #include "lidar_object_detector/uturn_hyper_parameterConfig.h"
+
+
+//#include <race/drive_values.h>
+
 
 #endif // HEADER_H

@@ -183,8 +183,8 @@ class WaypointMaker{
     }
 
     // method
-    void mainCallback(const lidar_object_detector::Trafficcone& msg); // 이 객체의 전체 로직을 수행하는 함수입니다.
-    void setObjectInfo(const lidar_object_detector::Trafficcone& msg); // object_info 정보를 받아 값을 objects에 저장하고 X값 기준 오름차순으로 정렬합니다.
+    void mainCallback(const lidar_trafficcone_detection::Trafficcone& msg); // 이 객체의 전체 로직을 수행하는 함수입니다.
+    void setObjectInfo(const lidar_trafficcone_detection::Trafficcone& msg); // object_info 정보를 받아 값을 objects에 저장하고 X값 기준 오름차순으로 정렬합니다.
     void setLeftRightConeInfo(); // 핵심 함수입니다. 자세한건 함수에 적어놨습니다.
     void setWaypointInfo(); // leftCone과 rightCone 정보를 이용하여 Waypoint를 계산하고 토픽을 발행합니다.
 
@@ -197,7 +197,7 @@ class WaypointMaker{
     // void cfgCallback(waypoint_maker::waypointMakerConfig &config, int32_t level);
 };
 
-void WaypointMaker::mainCallback(const lidar_object_detector::Trafficcone& msg) {
+void WaypointMaker::mainCallback(const lidar_trafficcone_detection::Trafficcone& msg) {
     setObjectInfo(msg);
     setLeftRightConeInfo();
     setWaypointInfo();
@@ -208,7 +208,7 @@ void WaypointMaker::mainCallback(const lidar_object_detector::Trafficcone& msg) 
     // visualizePivot();
 }
 
-void WaypointMaker::setObjectInfo(const lidar_object_detector::Trafficcone& msg) {
+void WaypointMaker::setObjectInfo(const lidar_trafficcone_detection::Trafficcone& msg) {
     /**
      * @brief 
      * object_detector가 발행하는 /object_info 토픽 메시지를 받아
@@ -285,10 +285,13 @@ void WaypointMaker::setLeftRightConeInfo() {
             // leftConeArray에 넣고 피봇 변경
             leftCones.cone[leftCones.size++] = cone;
             leftPivot = *cone;
-        } else if (isRight) {
+
+        }
+        else if(isRight){
             rightCones.cone[rightCones.size++] = cone;
-            rightPivot = *cone;
-        } else {
+            rightPivot = *cone;            
+        }
+        else {
             cout << "Critical ERROR CALL\n";
         }
     }
@@ -341,9 +344,10 @@ void WaypointMaker::setWaypointInfo() {
                     waypointInfoMsg.y_arr[i] = (leftPivot.centerY + rightCones.cone[i]->centerY) / 2;
                 }
             }
-    }
+        }   
     waypointInfoPub.publish(waypointInfoMsg);
     this->visualizeLeftRightCone();
+    }
 }
 
 void WaypointMaker::visualizeLeftRightCone() {
