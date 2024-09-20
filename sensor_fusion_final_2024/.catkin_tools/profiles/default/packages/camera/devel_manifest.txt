@@ -1,0 +1,20 @@
+camera
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/cmake.lock /home/foscar/sensor_fusion_final_2024/devel/./cmake.lock
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/roseus/ros/camera/manifest.l /home/foscar/sensor_fusion_final_2024/devel/share/roseus/ros/camera/manifest.l
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/roseus/ros/camera/msg/YoloTrafficCone.l /home/foscar/sensor_fusion_final_2024/devel/share/roseus/ros/camera/msg/YoloTrafficCone.l
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/common-lisp/ros/camera/msg/_package_YoloTrafficCone.lisp /home/foscar/sensor_fusion_final_2024/devel/share/common-lisp/ros/camera/msg/_package_YoloTrafficCone.lisp
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/common-lisp/ros/camera/msg/camera-msg.asd /home/foscar/sensor_fusion_final_2024/devel/share/common-lisp/ros/camera/msg/camera-msg.asd
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/common-lisp/ros/camera/msg/_package.lisp /home/foscar/sensor_fusion_final_2024/devel/share/common-lisp/ros/camera/msg/_package.lisp
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/common-lisp/ros/camera/msg/YoloTrafficCone.lisp /home/foscar/sensor_fusion_final_2024/devel/share/common-lisp/ros/camera/msg/YoloTrafficCone.lisp
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/camera/cmake/cameraConfig.cmake /home/foscar/sensor_fusion_final_2024/devel/share/camera/cmake/cameraConfig.cmake
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/camera/cmake/camera-msg-paths.cmake /home/foscar/sensor_fusion_final_2024/devel/share/camera/cmake/camera-msg-paths.cmake
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/camera/cmake/cameraConfig-version.cmake /home/foscar/sensor_fusion_final_2024/devel/share/camera/cmake/cameraConfig-version.cmake
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/camera/cmake/camera-msg-extras.cmake /home/foscar/sensor_fusion_final_2024/devel/share/camera/cmake/camera-msg-extras.cmake
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/gennodejs/ros/camera/_index.js /home/foscar/sensor_fusion_final_2024/devel/share/gennodejs/ros/camera/_index.js
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/gennodejs/ros/camera/msg/YoloTrafficCone.js /home/foscar/sensor_fusion_final_2024/devel/share/gennodejs/ros/camera/msg/YoloTrafficCone.js
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/share/gennodejs/ros/camera/msg/_index.js /home/foscar/sensor_fusion_final_2024/devel/share/gennodejs/ros/camera/msg/_index.js
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/include/camera/YoloTrafficCone.h /home/foscar/sensor_fusion_final_2024/devel/include/camera/YoloTrafficCone.h
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/lib/python3/dist-packages/camera/__init__.py /home/foscar/sensor_fusion_final_2024/devel/lib/python3/dist-packages/camera/__init__.py
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/lib/python3/dist-packages/camera/msg/__init__.py /home/foscar/sensor_fusion_final_2024/devel/lib/python3/dist-packages/camera/msg/__init__.py
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/lib/python3/dist-packages/camera/msg/_YoloTrafficCone.py /home/foscar/sensor_fusion_final_2024/devel/lib/python3/dist-packages/camera/msg/_YoloTrafficCone.py
+/home/foscar/sensor_fusion_final_2024/devel/.private/camera/lib/pkgconfig/camera.pc /home/foscar/sensor_fusion_final_2024/devel/lib/pkgconfig/camera.pc

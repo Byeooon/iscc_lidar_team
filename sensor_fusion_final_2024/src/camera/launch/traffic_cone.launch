@@ -1,0 +1,102 @@
+<launch>
+    <!-- Camera 1 (Left) -->
+    <node name="usb_cam_left" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video0" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam_left" />
+        <param name="io_method" value="mmap"/>
+    </node>
+
+    <!-- Camera 2 (Center) -->
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video2" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam" />
+        <param name="io_method" value="mmap"/>
+    </node>
+
+    <!-- Camera 3 (Right) -->
+    <!-- <node name="usb_cam_right" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video4" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam_right" />
+        <param name="io_method" value="mmap"/>
+    </node> -->
+
+    <!-- YOLOV7 for Left Camera -->
+    <!-- <node name="YOLOV7_left" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/traffic_cone_yolo_left_result"/>
+        <param name="autosize" value="true" />
+    </node> -->
+
+    <!-- YOLOV7 for Center Camera -->
+    <!-- <node name="YOLOV7_center" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/traffic_cone_yolo_result"/>
+        <param name="autosize" value="true" />
+    </node> -->
+
+    <!-- YOLOV7 for Right Camera -->
+    <!-- <node name="YOLOV7_right" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/traffic_cone_yolo_right_result"/>
+        <param name="autosize" value="true" />
+    </node> -->
+
+    <!-- Traffic Cone Detection Node -->
+    <node name="detect_traffic_cone" pkg="camera" type="detect_traffic_cone.py" output="screen"/>
+    <node name="detect_traffic_cone_left" pkg="camera" type="detect_traffic_cone_left.py" output="screen"/>
+    <!-- <node name="detect_traffic_cone_right" pkg="camera" type="detect_traffic_cone_right.py" output="screen"/> -->
+
+
+    <node name="detect_traffic_cone_visualization" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/traffic_cone_yolo_result"/>
+        <param name="autosize" value="true" />
+    </node>
+    
+    <!-- <node name="detect_traffic_cone_left" pkg="camera" type="detect_traffic_cone_left.py"/> -->
+    <!-- <node name="detect_traffic_cone_right" pkg="camera" type="detect_traffic_cone_right.py"/> -->
+
+
+    <node name="detect_traffic_cone_left_visualization" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/traffic_cone_yolo_left_result"/>
+        <param name="autosize" value="true" />
+    </node>
+    
+    <!-- <node name="detect_traffic_cone_right_visualization" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/traffic_cone_yolo_right_result"/>
+        <param name="autosize" value="true" />
+    </node> -->
+    <!-- <node name="usb_cam_left" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video4" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam_left" />
+        <param name="io_method" value="mmap"/>
+    </node> -->
+
+    <!-- Camera 2 (Center) -->
+    <!-- <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/camera0" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam" />
+        <param name="io_method" value="mmap"/>
+    </node> -->
+
+    <!-- Camera 3 (Right) -->
+    <!-- <node name="usb_cam_right" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video2" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam_right" />
+        <param name="io_method" value="mmap"/>
+    </node> -->
+</launch>

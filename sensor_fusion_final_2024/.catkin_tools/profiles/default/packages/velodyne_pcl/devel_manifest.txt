@@ -1,0 +1,5 @@
+lidar/velodyne/velodyne_pcl
+/home/foscar/sensor_fusion_final_2024/devel/.private/velodyne_pcl/cmake.lock /home/foscar/sensor_fusion_final_2024/devel/./cmake.lock
+/home/foscar/sensor_fusion_final_2024/devel/.private/velodyne_pcl/share/velodyne_pcl/cmake/velodyne_pclConfig-version.cmake /home/foscar/sensor_fusion_final_2024/devel/share/velodyne_pcl/cmake/velodyne_pclConfig-version.cmake
+/home/foscar/sensor_fusion_final_2024/devel/.private/velodyne_pcl/share/velodyne_pcl/cmake/velodyne_pclConfig.cmake /home/foscar/sensor_fusion_final_2024/devel/share/velodyne_pcl/cmake/velodyne_pclConfig.cmake
+/home/foscar/sensor_fusion_final_2024/devel/.private/velodyne_pcl/lib/pkgconfig/velodyne_pcl.pc /home/foscar/sensor_fusion_final_2024/devel/lib/pkgconfig/velodyne_pcl.pc

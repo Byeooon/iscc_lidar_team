@@ -1,0 +1,23 @@
+<launch>
+    <include file="$(find camera)/launch/traffic_cone.launch" />
+    <!-- <include file="$(find camera)/launch/traffic_cone_morai.launch" /> -->
+    <include file="$(find waypoint_maker)/launch/waypoint_maker.launch"/>
+    <node name="fusion" pkg="fusion" type="fusion_path_planner.py" output="screen"/>
+    <!-- <node name="fusion_left" pkg="fusion" type="fusion_path_planner_left.py" output="screen"/> -->
+    <!-- <node name="fusion_right" pkg="fusion" type="fusion_path_planner_right.py" output="screen"/> -->
+    <node name="sort" pkg="fusion" type="sort.py" output="screen"/>
+
+
+    <!-- <node name="result_left" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/sensor_fusion_result_left"/>
+        <param name="autosize" value="true" />
+    </node>
+    <node name="result_right" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/sensor_fusion_result_right"/>
+        <param name="autosize" value="true" />
+    </node> -->
+    <node name="result_center" pkg="image_view" type="image_view" respawn="false" output="screen">
+        <remap from="image" to="/webcam_image2"/>
+        <param name="autosize" value="true" />
+    </node>
+</launch>
